@@ -1,6 +1,7 @@
 import argparse
 import os
 
+import numpy as np
 import torch
 import torch.nn as nn
 import torchvision.transforms as transforms
@@ -27,10 +28,25 @@ class Generator(nn.Module):
         #   LeakyReLU(0.2)
         #   Linear 1024 -> 768
         #   Output non-linearity
+        self.model = nn.Sequential(
+            nn.Linear(args.latent_dim, 128),
+            nn.LeakyReLU(0.2),
+            nn.Linear(128,256),
+            nn.BatchNorm1d(256),
+            nn.LeakyReLU(0.2),
+            nn.Linear(256, 512),
+            nn.BatchNorm1d(512),
+            nn.LeakyReLU(0.2),
+            nn.Linear(512, 1024),
+            nn.BatchNorm1d(1024),
+            nn.LeakyReLU(0.2),
+            nn.Linear(1024, 784),
+            nn.Sigmoid() # choose a different output non linearity?
+        )
 
     def forward(self, z):
         # Generate images from z
-        pass
+        return self.model(z)
 
 
 class Discriminator(nn.Module):
@@ -45,24 +61,52 @@ class Discriminator(nn.Module):
         #   LeakyReLU(0.2)
         #   Linear 256 -> 1
         #   Output non-linearity
+        self.model = nn.Sequential(
+            nn.Linear(784, 512),
+            nn.LeakyReLU(0.2),
+            nn.Linear(512, 256),
+            nn.LeakyReLU(0.2),
+            nn.Linear(512, 1),
+            nn.Sigmoid() # use different non linearity?
+        )
 
     def forward(self, img):
-        # return discriminator score for img
-        pass
+        return self.model(img)
 
 
-def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
+def train(dataloader, discriminator, generator, optimizer_G, optimizer_D, criteriton = nn.BCELoss()):
+
     for epoch in range(args.n_epochs):
+        print("Epoch {}".format(epoch))
         for i, (imgs, _) in enumerate(dataloader):
+            print("Step {}".format(i))
 
             imgs.cuda()
 
+
             # Train Generator
             # ---------------
+            z = torch.randn((args.batch_size, args.latent_dim))
+            fake_imgs = generator(z)
+            l_g = torch.log(discriminator(fake_imgs))
+
+            optimizer_G.zero_grad()
+            l_g.backward()
+            optimizer_G.step()
 
             # Train Discriminator
             # -------------------
             optimizer_D.zero_grad()
+
+            mixed_batch = torch.cat((imgs.view(64,784), fake_imgs))
+            targets = torch.cat((torch.ones(imgs.shape[0]),torch.zeros(imgs.shape[0])))
+            predictions = discriminator.forward(mixed_batch)
+
+            # Compute loss
+            loss = criteriton(predictions, targets)
+
+            optimizer_D.step()
+            optimizer_G.step()
 
             # Save Images
             # -----------
@@ -86,8 +130,8 @@ def main():
         datasets.MNIST('./data/mnist', train=True, download=True,
                        transform=transforms.Compose([
                            transforms.ToTensor(),
-                           transforms.Normalize((0.5, 0.5, 0.5),
-                                                (0.5, 0.5, 0.5))])),
+                           transforms.Normalize((0.5, ),
+                                                (0.5, ))])),
         batch_size=args.batch_size, shuffle=True)
 
     # Initialize models and optimizers
