@@ -10,8 +10,16 @@ from datasets.bmnist import bmnist
 
 class Encoder(nn.Module):
 
-    def __init__(self, hidden_dim=500, z_dim=20):
+    def __init__(self, input_dim = 784, hidden_dim=500, z_dim=20):
         super().__init__()
+
+        self.hidden_layer = nn.Sequential(
+            nn.Linear(input_dim, hidden_dim),
+            nn.Tanh()
+        )
+
+        self.mean_layer  = nn.Linear(hidden_dim, z_dim)
+        self.std_layer = nn.Linear(hidden_dim, z_dim)
 
     def forward(self, input):
         """
@@ -20,16 +28,27 @@ class Encoder(nn.Module):
         Returns mean and std with shape [batch_size, z_dim]. Make sure
         that any constraints are enforced.
         """
-        mean, std = None, None
-        raise NotImplementedError()
+
+        hidden_out = self.hidden_layer(input)
+        mean = self.mean_layer(hidden_out)
+        std = self.std_layer(hidden_out)
 
         return mean, std
 
 
 class Decoder(nn.Module):
 
-    def __init__(self, hidden_dim=500, z_dim=20):
+    def __init__(self, hidden_dim=500, z_dim=20, out_dim = 784):
         super().__init__()
+        self.first_linear = nn.Sequential(
+            nn.Linear(z_dim,hidden_dim),
+            nn.Tanh()
+        )
+
+        self.second_linear = nn.Sequential(
+            nn.Linear(hidden_dim,out_dim),
+            nn.Sigmoid()
+        )
 
     def forward(self, input):
         """
@@ -37,8 +56,7 @@ class Decoder(nn.Module):
 
         Returns mean with shape [batch_size, 784].
         """
-        mean = None
-        raise NotImplementedError()
+        mean = self.second_linear(self.first_linear(input))
 
         return mean
 
@@ -68,7 +86,6 @@ class VAE(nn.Module):
         used to plot the data manifold).
         """
         sampled_ims, im_means = None, None
-        raise NotImplementedError()
 
         return sampled_ims, im_means
 
