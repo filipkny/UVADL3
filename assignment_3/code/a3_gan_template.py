@@ -66,7 +66,7 @@ class Discriminator(nn.Module):
             nn.LeakyReLU(0.2),
             nn.Linear(512, 256),
             nn.LeakyReLU(0.2),
-            nn.Linear(512, 1),
+            nn.Linear(256, 1),
             nn.Sigmoid() # use different non linearity?
         )
 
@@ -74,40 +74,56 @@ class Discriminator(nn.Module):
         return self.model(img)
 
 
-def train(dataloader, discriminator, generator, optimizer_G, optimizer_D, criteriton = nn.BCELoss()):
+def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    print("device:", device)
+
+    discriminator = discriminator.to(device)
+    generator = generator.to(device)
+    criterion = nn.BCEWithLogitsLoss().to(device)
 
     for epoch in range(args.n_epochs):
         print("Epoch {}".format(epoch))
         for i, (imgs, _) in enumerate(dataloader):
-            print("Step {}".format(i))
+            real_labels = torch.ones((imgs.shape[0],1)).to(device)
+            fake_labels = torch.zeros((imgs.shape[0],1)).to(device)
 
             imgs.cuda()
-
-
-            # Train Generator
-            # ---------------
-            z = torch.randn((args.batch_size, args.latent_dim))
-            fake_imgs = generator(z)
-            l_g = torch.log(discriminator(fake_imgs))
-
-            optimizer_G.zero_grad()
-            l_g.backward()
-            optimizer_G.step()
+            imgs.to(device)
 
             # Train Discriminator
             # -------------------
             optimizer_D.zero_grad()
 
-            mixed_batch = torch.cat((imgs.view(64,784), fake_imgs))
-            targets = torch.cat((torch.ones(imgs.shape[0]),torch.zeros(imgs.shape[0])))
-            predictions = discriminator.forward(mixed_batch)
+            real_imgs = imgs.view(-1, 784).to(device)
+            z = torch.randn(args.batch_size, args.latent_dim, device=device)
+            real_predictions = discriminator.forward(real_imgs)
+            fake_predictions = discriminator.forward(generator(z))
 
             # Compute loss
-            loss = criteriton(predictions, targets)
+            loss_real = criterion(real_predictions, real_labels)
+            loss_fake = criterion(fake_predictions, fake_labels)
+            loss_d = loss_real + loss_fake
 
+            optimizer_D.zero_grad()
+            loss_d.backward(retain_graph=True)
             optimizer_D.step()
+
+
+            # Train Generator
+            # ---------------
+            z = torch.randn(args.batch_size, args.latent_dim,device=device)
+            fake_imgs = generator(z).to(device)
+            d_fake = discriminator(fake_imgs).to(device)
+            loss_gen = criterion(d_fake, real_labels)
+
+            optimizer_G.zero_grad()
+            loss_gen.backward(retain_graph=True)
             optimizer_G.step()
 
+
+            if i % 100 == 0:
+                print("{}: loss discrimnator -> {}, loss generator -> {}, acc {}".format(i,loss_d,loss_gen,1))
             # Save Images
             # -----------
             batches_done = epoch * len(dataloader) + i
