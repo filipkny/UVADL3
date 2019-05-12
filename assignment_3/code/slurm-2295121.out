@@ -1,0 +1,2582 @@
+/var/spool/slurm-llnl/slurmd/job2295121/slurm_script: line 19: cd: /home/lgpu0295/UVADL3/code/: No such file or directory
+ ------ Job convnet_pytorch is started ------- 
+ 
+device: cuda
+Epoch 0
+0: loss discrimnator -> 1.4433757066726685, loss generator -> 0.4744493067264557
+--- Saving images ---
+100: loss discrimnator -> 1.3055814504623413, loss generator -> 0.5069209933280945
+200: loss discrimnator -> 1.0161932706832886, loss generator -> 0.6830284595489502
+300: loss discrimnator -> 1.0365355014801025, loss generator -> 0.6868329048156738
+400: loss discrimnator -> 1.0271128416061401, loss generator -> 0.6791272163391113
+500: loss discrimnator -> 1.072849154472351, loss generator -> 0.6628981232643127
+--- Saving images ---
+600: loss discrimnator -> 1.3149151802062988, loss generator -> 0.5049862265586853
+700: loss discrimnator -> 1.3613543510437012, loss generator -> 0.49856269359588623
+800: loss discrimnator -> 1.2084283828735352, loss generator -> 0.6030609607696533
+900: loss discrimnator -> 1.156280517578125, loss generator -> 0.6198812127113342
+Epoch 1
+0: loss discrimnator -> 1.1665992736816406, loss generator -> 0.6234744787216187
+--- Saving images ---
+100: loss discrimnator -> 1.2391003370285034, loss generator -> 0.5804804563522339
+200: loss discrimnator -> 1.0384236574172974, loss generator -> 0.6795790195465088
+300: loss discrimnator -> 1.0089789628982544, loss generator -> 0.6924341917037964
+400: loss discrimnator -> 1.2807211875915527, loss generator -> 0.5261873006820679
+500: loss discrimnator -> 1.0281755924224854, loss generator -> 0.6919540166854858
+--- Saving images ---
+600: loss discrimnator -> 1.1416234970092773, loss generator -> 0.6823327541351318
+700: loss discrimnator -> 1.1234674453735352, loss generator -> 0.6795203685760498
+800: loss discrimnator -> 1.1022707223892212, loss generator -> 0.6826786398887634
+900: loss discrimnator -> 1.095844030380249, loss generator -> 0.6816351413726807
+Epoch 2
+0: loss discrimnator -> 1.013352632522583, loss generator -> 0.6919159889221191
+100: loss discrimnator -> 1.0291006565093994, loss generator -> 0.6771465539932251
+--- Saving images ---
+200: loss discrimnator -> 1.0323772430419922, loss generator -> 0.6900330185890198
+300: loss discrimnator -> 1.1892775297164917, loss generator -> 0.61118483543396
+400: loss discrimnator -> 1.0975441932678223, loss generator -> 0.6266873478889465
+500: loss discrimnator -> 1.1224260330200195, loss generator -> 0.6556118726730347
+600: loss discrimnator -> 1.2679193019866943, loss generator -> 0.602390706539154
+--- Saving images ---
+700: loss discrimnator -> 1.074913740158081, loss generator -> 0.6869986653327942
+800: loss discrimnator -> 1.3448185920715332, loss generator -> 0.6888648867607117
+900: loss discrimnator -> 1.0633066892623901, loss generator -> 0.6876010894775391
+Epoch 3
+0: loss discrimnator -> 1.0826284885406494, loss generator -> 0.6832075119018555
+100: loss discrimnator -> 1.0078446865081787, loss generator -> 0.6928818225860596
+--- Saving images ---
+200: loss discrimnator -> 1.177556037902832, loss generator -> 0.6903924942016602
+300: loss discrimnator -> 1.177232027053833, loss generator -> 0.6744108200073242
+400: loss discrimnator -> 1.169079065322876, loss generator -> 0.6631671190261841
+500: loss discrimnator -> 1.159327507019043, loss generator -> 0.6768248677253723
+600: loss discrimnator -> 1.113765835762024, loss generator -> 0.6889320611953735
+--- Saving images ---
+700: loss discrimnator -> 1.1017372608184814, loss generator -> 0.6661434173583984
+800: loss discrimnator -> 1.1383064985275269, loss generator -> 0.6661381721496582
+900: loss discrimnator -> 1.090742826461792, loss generator -> 0.6840195059776306
+Epoch 4
+0: loss discrimnator -> 1.1176071166992188, loss generator -> 0.67424076795578
+100: loss discrimnator -> 1.1375198364257812, loss generator -> 0.6880030632019043
+200: loss discrimnator -> 1.1099581718444824, loss generator -> 0.6669881343841553
+--- Saving images ---
+300: loss discrimnator -> 1.0605411529541016, loss generator -> 0.6891853213310242
+400: loss discrimnator -> 1.153381586074829, loss generator -> 0.6804783344268799
+500: loss discrimnator -> 1.2582110166549683, loss generator -> 0.594451367855072
+600: loss discrimnator -> 1.2693047523498535, loss generator -> 0.6825960874557495
+700: loss discrimnator -> 1.278029203414917, loss generator -> 0.6790128350257874
+--- Saving images ---
+800: loss discrimnator -> 1.1547284126281738, loss generator -> 0.6862826347351074
+900: loss discrimnator -> 1.252946376800537, loss generator -> 0.6587281823158264
+Epoch 5
+0: loss discrimnator -> 1.1780537366867065, loss generator -> 0.6565819382667542
+100: loss discrimnator -> 1.1913228034973145, loss generator -> 0.5935686826705933
+200: loss discrimnator -> 1.2189102172851562, loss generator -> 0.6476666927337646
+300: loss discrimnator -> 1.434278130531311, loss generator -> 0.6021332144737244
+--- Saving images ---
+400: loss discrimnator -> 1.2127143144607544, loss generator -> 0.6624940633773804
+500: loss discrimnator -> 1.2346088886260986, loss generator -> 0.6694203615188599
+600: loss discrimnator -> 1.1872930526733398, loss generator -> 0.6524288654327393
+700: loss discrimnator -> 1.183899164199829, loss generator -> 0.6184452772140503
+800: loss discrimnator -> 1.1433942317962646, loss generator -> 0.666512668132782
+--- Saving images ---
+900: loss discrimnator -> 1.1712976694107056, loss generator -> 0.6185956001281738
+Epoch 6
+0: loss discrimnator -> 1.3003554344177246, loss generator -> 0.5405545234680176
+100: loss discrimnator -> 1.226151943206787, loss generator -> 0.6601929068565369
+200: loss discrimnator -> 1.2747912406921387, loss generator -> 0.6667541861534119
+300: loss discrimnator -> 1.336784839630127, loss generator -> 0.6423051953315735
+--- Saving images ---
+400: loss discrimnator -> 1.3144233226776123, loss generator -> 0.5827858448028564
+500: loss discrimnator -> 1.2538036108016968, loss generator -> 0.6662768125534058
+600: loss discrimnator -> 1.2857710123062134, loss generator -> 0.633048415184021
+700: loss discrimnator -> 1.2448234558105469, loss generator -> 0.6063976883888245
+800: loss discrimnator -> 1.212477207183838, loss generator -> 0.5933319926261902
+--- Saving images ---
+900: loss discrimnator -> 1.2779643535614014, loss generator -> 0.6260985136032104
+Epoch 7
+0: loss discrimnator -> 1.2779934406280518, loss generator -> 0.6332457065582275
+100: loss discrimnator -> 1.2426996231079102, loss generator -> 0.6756266355514526
+200: loss discrimnator -> 1.2405648231506348, loss generator -> 0.6869182586669922
+300: loss discrimnator -> 1.2748148441314697, loss generator -> 0.6561444997787476
+400: loss discrimnator -> 1.3204848766326904, loss generator -> 0.6684424877166748
+--- Saving images ---
+500: loss discrimnator -> 1.2837281227111816, loss generator -> 0.6602547764778137
+600: loss discrimnator -> 1.1732685565948486, loss generator -> 0.6194021701812744
+700: loss discrimnator -> 1.2440909147262573, loss generator -> 0.6716708540916443
+800: loss discrimnator -> 1.2577672004699707, loss generator -> 0.633628785610199
+900: loss discrimnator -> 1.2952269315719604, loss generator -> 0.6681495904922485
+--- Saving images ---
+Epoch 8
+0: loss discrimnator -> 1.3154325485229492, loss generator -> 0.6681118011474609
+100: loss discrimnator -> 1.256296157836914, loss generator -> 0.6776711940765381
+200: loss discrimnator -> 1.2506382465362549, loss generator -> 0.6445015668869019
+300: loss discrimnator -> 1.3094477653503418, loss generator -> 0.682572603225708
+400: loss discrimnator -> 1.2843949794769287, loss generator -> 0.6585662364959717
+--- Saving images ---
+500: loss discrimnator -> 1.2864503860473633, loss generator -> 0.6695101261138916
+600: loss discrimnator -> 1.2699748277664185, loss generator -> 0.5859434604644775
+700: loss discrimnator -> 1.2131785154342651, loss generator -> 0.6134015321731567
+800: loss discrimnator -> 1.2925970554351807, loss generator -> 0.664110541343689
+900: loss discrimnator -> 1.2531486749649048, loss generator -> 0.63495934009552
+Epoch 9
+0: loss discrimnator -> 1.3050014972686768, loss generator -> 0.6874650716781616
+--- Saving images ---
+100: loss discrimnator -> 1.2443177700042725, loss generator -> 0.6842154264450073
+200: loss discrimnator -> 1.2192922830581665, loss generator -> 0.6452025771141052
+300: loss discrimnator -> 1.3501648902893066, loss generator -> 0.6784054636955261
+400: loss discrimnator -> 1.1926482915878296, loss generator -> 0.6169077157974243
+500: loss discrimnator -> 1.3336257934570312, loss generator -> 0.6534977555274963
+--- Saving images ---
+600: loss discrimnator -> 1.3341281414031982, loss generator -> 0.6396021842956543
+700: loss discrimnator -> 1.2964837551116943, loss generator -> 0.6911572813987732
+800: loss discrimnator -> 1.270491361618042, loss generator -> 0.6322755217552185
+900: loss discrimnator -> 1.2890912294387817, loss generator -> 0.6481804847717285
+Epoch 10
+0: loss discrimnator -> 1.3040745258331299, loss generator -> 0.5535316467285156
+100: loss discrimnator -> 1.2426519393920898, loss generator -> 0.6397325992584229
+--- Saving images ---
+200: loss discrimnator -> 1.3620543479919434, loss generator -> 0.6787847280502319
+300: loss discrimnator -> 1.23917555809021, loss generator -> 0.6224676370620728
+400: loss discrimnator -> 1.329618215560913, loss generator -> 0.6833394169807434
+500: loss discrimnator -> 1.2516827583312988, loss generator -> 0.5910148620605469
+600: loss discrimnator -> 1.3356783390045166, loss generator -> 0.6528800129890442
+--- Saving images ---
+700: loss discrimnator -> 1.1803019046783447, loss generator -> 0.6445986032485962
+800: loss discrimnator -> 1.3136849403381348, loss generator -> 0.6806703805923462
+900: loss discrimnator -> 1.2783101797103882, loss generator -> 0.6210777759552002
+Epoch 11
+0: loss discrimnator -> 1.249481439590454, loss generator -> 0.6782420873641968
+100: loss discrimnator -> 1.279709815979004, loss generator -> 0.6751546859741211
+--- Saving images ---
+200: loss discrimnator -> 1.3812700510025024, loss generator -> 0.6585913300514221
+300: loss discrimnator -> 1.2947404384613037, loss generator -> 0.6784118413925171
+400: loss discrimnator -> 1.289013147354126, loss generator -> 0.6702793836593628
+500: loss discrimnator -> 1.2715134620666504, loss generator -> 0.6725634336471558
+600: loss discrimnator -> 1.317859411239624, loss generator -> 0.6151638627052307
+--- Saving images ---
+700: loss discrimnator -> 1.2792326211929321, loss generator -> 0.6291292309761047
+800: loss discrimnator -> 1.2677903175354004, loss generator -> 0.669589638710022
+900: loss discrimnator -> 1.2321618795394897, loss generator -> 0.6747912168502808
+Epoch 12
+0: loss discrimnator -> 1.2747422456741333, loss generator -> 0.6753538846969604
+100: loss discrimnator -> 1.2384858131408691, loss generator -> 0.6106230020523071
+200: loss discrimnator -> 1.259908676147461, loss generator -> 0.6753741502761841
+--- Saving images ---
+300: loss discrimnator -> 1.261144757270813, loss generator -> 0.6021877527236938
+400: loss discrimnator -> 1.2268825769424438, loss generator -> 0.6734544634819031
+500: loss discrimnator -> 1.152557134628296, loss generator -> 0.6483666300773621
+600: loss discrimnator -> 1.224846363067627, loss generator -> 0.6610848307609558
+700: loss discrimnator -> 1.2327762842178345, loss generator -> 0.6439089775085449
+--- Saving images ---
+800: loss discrimnator -> 1.2481660842895508, loss generator -> 0.6438239216804504
+900: loss discrimnator -> 1.3272409439086914, loss generator -> 0.6746779680252075
+Epoch 13
+0: loss discrimnator -> 1.3609604835510254, loss generator -> 0.6898589134216309
+100: loss discrimnator -> 1.386237621307373, loss generator -> 0.693146824836731
+200: loss discrimnator -> 1.3265118598937988, loss generator -> 0.6566258668899536
+300: loss discrimnator -> 1.2752612829208374, loss generator -> 0.6482791304588318
+--- Saving images ---
+400: loss discrimnator -> 1.230329990386963, loss generator -> 0.653328537940979
+500: loss discrimnator -> 1.3727928400039673, loss generator -> 0.6931405067443848
+600: loss discrimnator -> 1.262034296989441, loss generator -> 0.6566929817199707
+700: loss discrimnator -> 1.3615615367889404, loss generator -> 0.6511985063552856
+800: loss discrimnator -> 1.272218108177185, loss generator -> 0.6429867744445801
+--- Saving images ---
+900: loss discrimnator -> 1.233549952507019, loss generator -> 0.582848072052002
+Epoch 14
+0: loss discrimnator -> 1.3119531869888306, loss generator -> 0.6821917295455933
+100: loss discrimnator -> 1.2172057628631592, loss generator -> 0.6496132612228394
+200: loss discrimnator -> 1.4127429723739624, loss generator -> 0.673392653465271
+300: loss discrimnator -> 1.2575693130493164, loss generator -> 0.6074000000953674
+--- Saving images ---
+400: loss discrimnator -> 1.3069546222686768, loss generator -> 0.6586912870407104
+500: loss discrimnator -> 1.2287933826446533, loss generator -> 0.6726337671279907
+600: loss discrimnator -> 1.2044486999511719, loss generator -> 0.6350482702255249
+700: loss discrimnator -> 1.2946327924728394, loss generator -> 0.6501840949058533
+800: loss discrimnator -> 1.2287415266036987, loss generator -> 0.6809858679771423
+--- Saving images ---
+900: loss discrimnator -> 1.2928760051727295, loss generator -> 0.6603342294692993
+Epoch 15
+0: loss discrimnator -> 1.295229196548462, loss generator -> 0.626036524772644
+100: loss discrimnator -> 1.3290057182312012, loss generator -> 0.6602882742881775
+200: loss discrimnator -> 1.280185580253601, loss generator -> 0.6334408521652222
+300: loss discrimnator -> 1.244603157043457, loss generator -> 0.6028855443000793
+400: loss discrimnator -> 1.316074013710022, loss generator -> 0.6146498918533325
+--- Saving images ---
+500: loss discrimnator -> 1.3399767875671387, loss generator -> 0.6879066228866577
+600: loss discrimnator -> 1.2445473670959473, loss generator -> 0.6702752113342285
+700: loss discrimnator -> 1.2176530361175537, loss generator -> 0.6858140230178833
+800: loss discrimnator -> 1.2767970561981201, loss generator -> 0.5464747548103333
+900: loss discrimnator -> 1.2754396200180054, loss generator -> 0.6233710646629333
+--- Saving images ---
+Epoch 16
+0: loss discrimnator -> 1.212907075881958, loss generator -> 0.6501483917236328
+100: loss discrimnator -> 1.3544108867645264, loss generator -> 0.6331226825714111
+200: loss discrimnator -> 1.2841821908950806, loss generator -> 0.6325304508209229
+300: loss discrimnator -> 1.2299846410751343, loss generator -> 0.6366690397262573
+400: loss discrimnator -> 1.2714970111846924, loss generator -> 0.6594071388244629
+--- Saving images ---
+500: loss discrimnator -> 1.301087737083435, loss generator -> 0.6219542026519775
+600: loss discrimnator -> 1.2305821180343628, loss generator -> 0.6293685436248779
+700: loss discrimnator -> 1.292168378829956, loss generator -> 0.6227337718009949
+800: loss discrimnator -> 1.2132697105407715, loss generator -> 0.6369702816009521
+900: loss discrimnator -> 1.253265380859375, loss generator -> 0.6435990333557129
+Epoch 17
+0: loss discrimnator -> 1.2727330923080444, loss generator -> 0.6597636938095093
+--- Saving images ---
+100: loss discrimnator -> 1.2897069454193115, loss generator -> 0.6647254228591919
+200: loss discrimnator -> 1.3530282974243164, loss generator -> 0.6164237260818481
+300: loss discrimnator -> 1.2582802772521973, loss generator -> 0.6611096858978271
+400: loss discrimnator -> 1.1835461854934692, loss generator -> 0.59294193983078
+500: loss discrimnator -> 1.2756595611572266, loss generator -> 0.6617322564125061
+--- Saving images ---
+600: loss discrimnator -> 1.2512147426605225, loss generator -> 0.6406844854354858
+700: loss discrimnator -> 1.304910659790039, loss generator -> 0.6104510426521301
+800: loss discrimnator -> 1.2413253784179688, loss generator -> 0.6696487069129944
+900: loss discrimnator -> 1.2958300113677979, loss generator -> 0.6768923997879028
+Epoch 18
+0: loss discrimnator -> 1.338726282119751, loss generator -> 0.6281052827835083
+100: loss discrimnator -> 1.265456199645996, loss generator -> 0.6793239116668701
+--- Saving images ---
+200: loss discrimnator -> 1.2351586818695068, loss generator -> 0.6400554180145264
+300: loss discrimnator -> 1.2976264953613281, loss generator -> 0.6298923492431641
+400: loss discrimnator -> 1.2976248264312744, loss generator -> 0.6474285125732422
+500: loss discrimnator -> 1.292256236076355, loss generator -> 0.6595270037651062
+600: loss discrimnator -> 1.3513503074645996, loss generator -> 0.6672075986862183
+--- Saving images ---
+700: loss discrimnator -> 1.207141637802124, loss generator -> 0.6116428971290588
+800: loss discrimnator -> 1.2872166633605957, loss generator -> 0.6540782451629639
+900: loss discrimnator -> 1.2851946353912354, loss generator -> 0.6477817296981812
+Epoch 19
+0: loss discrimnator -> 1.2056958675384521, loss generator -> 0.6428778171539307
+100: loss discrimnator -> 1.3394160270690918, loss generator -> 0.60831618309021
+--- Saving images ---
+200: loss discrimnator -> 1.3850386142730713, loss generator -> 0.6335881948471069
+300: loss discrimnator -> 1.3236534595489502, loss generator -> 0.6808996200561523
+400: loss discrimnator -> 1.327025294303894, loss generator -> 0.6460005044937134
+500: loss discrimnator -> 1.241864562034607, loss generator -> 0.6035691499710083
+600: loss discrimnator -> 1.3118948936462402, loss generator -> 0.6213997602462769
+--- Saving images ---
+700: loss discrimnator -> 1.2895177602767944, loss generator -> 0.676619291305542
+800: loss discrimnator -> 1.304591178894043, loss generator -> 0.6387659311294556
+900: loss discrimnator -> 1.2887520790100098, loss generator -> 0.6601464748382568
+Epoch 20
+0: loss discrimnator -> 1.319435715675354, loss generator -> 0.6387929916381836
+100: loss discrimnator -> 1.3329336643218994, loss generator -> 0.6234209537506104
+200: loss discrimnator -> 1.3674067258834839, loss generator -> 0.670670211315155
+--- Saving images ---
+300: loss discrimnator -> 1.314177393913269, loss generator -> 0.6058645844459534
+400: loss discrimnator -> 1.2541718482971191, loss generator -> 0.6397715210914612
+500: loss discrimnator -> 1.2344837188720703, loss generator -> 0.6497565507888794
+600: loss discrimnator -> 1.300938606262207, loss generator -> 0.5930966138839722
+700: loss discrimnator -> 1.2349376678466797, loss generator -> 0.6441563367843628
+--- Saving images ---
+800: loss discrimnator -> 1.2752023935317993, loss generator -> 0.6053359508514404
+900: loss discrimnator -> 1.2580451965332031, loss generator -> 0.6599114537239075
+Epoch 21
+0: loss discrimnator -> 1.2782011032104492, loss generator -> 0.6278376579284668
+100: loss discrimnator -> 1.2175872325897217, loss generator -> 0.6280076503753662
+200: loss discrimnator -> 1.363761067390442, loss generator -> 0.6808314323425293
+300: loss discrimnator -> 1.3776428699493408, loss generator -> 0.6713135242462158
+--- Saving images ---
+400: loss discrimnator -> 1.336963415145874, loss generator -> 0.6570271253585815
+500: loss discrimnator -> 1.309445858001709, loss generator -> 0.6150707006454468
+600: loss discrimnator -> 1.3654708862304688, loss generator -> 0.5115387439727783
+700: loss discrimnator -> 1.3769334554672241, loss generator -> 0.6561034917831421
+800: loss discrimnator -> 1.3164247274398804, loss generator -> 0.6750614643096924
+--- Saving images ---
+900: loss discrimnator -> 1.2597991228103638, loss generator -> 0.652218222618103
+Epoch 22
+0: loss discrimnator -> 1.2936089038848877, loss generator -> 0.6398557424545288
+100: loss discrimnator -> 1.288948893547058, loss generator -> 0.6526561975479126
+200: loss discrimnator -> 1.310505986213684, loss generator -> 0.6228131651878357
+300: loss discrimnator -> 1.2976418733596802, loss generator -> 0.6111809015274048
+--- Saving images ---
+400: loss discrimnator -> 1.3292198181152344, loss generator -> 0.674139142036438
+500: loss discrimnator -> 1.3598580360412598, loss generator -> 0.675439715385437
+600: loss discrimnator -> 1.3264572620391846, loss generator -> 0.6904301047325134
+700: loss discrimnator -> 1.373643159866333, loss generator -> 0.6902446150779724
+800: loss discrimnator -> 1.3261260986328125, loss generator -> 0.6607689261436462
+--- Saving images ---
+900: loss discrimnator -> 1.344825267791748, loss generator -> 0.6690043807029724
+Epoch 23
+0: loss discrimnator -> 1.3544232845306396, loss generator -> 0.6897653341293335
+100: loss discrimnator -> 1.3227771520614624, loss generator -> 0.6106836795806885
+200: loss discrimnator -> 1.3033573627471924, loss generator -> 0.6767048835754395
+300: loss discrimnator -> 1.352070927619934, loss generator -> 0.6726250648498535
+400: loss discrimnator -> 1.3470587730407715, loss generator -> 0.6641584634780884
+--- Saving images ---
+500: loss discrimnator -> 1.3306667804718018, loss generator -> 0.6351248025894165
+600: loss discrimnator -> 1.3029037714004517, loss generator -> 0.6665435433387756
+700: loss discrimnator -> 1.2909760475158691, loss generator -> 0.6216716170310974
+800: loss discrimnator -> 1.31898033618927, loss generator -> 0.6664950251579285
+900: loss discrimnator -> 1.3330098390579224, loss generator -> 0.6533199548721313
+--- Saving images ---
+Epoch 24
+0: loss discrimnator -> 1.2660186290740967, loss generator -> 0.6441699266433716
+100: loss discrimnator -> 1.3427934646606445, loss generator -> 0.6591826677322388
+200: loss discrimnator -> 1.3240900039672852, loss generator -> 0.6266868114471436
+300: loss discrimnator -> 1.317326545715332, loss generator -> 0.6636015772819519
+400: loss discrimnator -> 1.3586163520812988, loss generator -> 0.6317413449287415
+--- Saving images ---
+500: loss discrimnator -> 1.3147923946380615, loss generator -> 0.6360847353935242
+600: loss discrimnator -> 1.330008625984192, loss generator -> 0.6233448386192322
+700: loss discrimnator -> 1.3465876579284668, loss generator -> 0.6694272756576538
+800: loss discrimnator -> 1.3373453617095947, loss generator -> 0.6192613244056702
+900: loss discrimnator -> 1.301633358001709, loss generator -> 0.6365442872047424
+Epoch 25
+0: loss discrimnator -> 1.275745153427124, loss generator -> 0.5705841183662415
+--- Saving images ---
+100: loss discrimnator -> 1.3286540508270264, loss generator -> 0.5963134169578552
+200: loss discrimnator -> 1.3193899393081665, loss generator -> 0.6729991436004639
+300: loss discrimnator -> 1.3378794193267822, loss generator -> 0.6663596630096436
+400: loss discrimnator -> 1.3719136714935303, loss generator -> 0.6715880036354065
+500: loss discrimnator -> 1.3245220184326172, loss generator -> 0.653148889541626
+--- Saving images ---
+600: loss discrimnator -> 1.3516062498092651, loss generator -> 0.6619796752929688
+700: loss discrimnator -> 1.3447641134262085, loss generator -> 0.6060271859169006
+800: loss discrimnator -> 1.3292219638824463, loss generator -> 0.6462596654891968
+900: loss discrimnator -> 1.2821242809295654, loss generator -> 0.6524419188499451
+Epoch 26
+0: loss discrimnator -> 1.3013463020324707, loss generator -> 0.6707445979118347
+100: loss discrimnator -> 1.372138500213623, loss generator -> 0.6862488389015198
+--- Saving images ---
+200: loss discrimnator -> 1.2880635261535645, loss generator -> 0.6669195294380188
+300: loss discrimnator -> 1.345149278640747, loss generator -> 0.6338825225830078
+400: loss discrimnator -> 1.3001163005828857, loss generator -> 0.6803882122039795
+500: loss discrimnator -> 1.2798380851745605, loss generator -> 0.6548461318016052
+600: loss discrimnator -> 1.2706494331359863, loss generator -> 0.604636549949646
+--- Saving images ---
+700: loss discrimnator -> 1.29742431640625, loss generator -> 0.6771441102027893
+800: loss discrimnator -> 1.3374028205871582, loss generator -> 0.6677751541137695
+900: loss discrimnator -> 1.354720115661621, loss generator -> 0.6524887681007385
+Epoch 27
+0: loss discrimnator -> 1.285461664199829, loss generator -> 0.6357946395874023
+100: loss discrimnator -> 1.3120737075805664, loss generator -> 0.6287128329277039
+--- Saving images ---
+200: loss discrimnator -> 1.3951177597045898, loss generator -> 0.5772343873977661
+300: loss discrimnator -> 1.320303201675415, loss generator -> 0.678725004196167
+400: loss discrimnator -> 1.3278155326843262, loss generator -> 0.62978196144104
+500: loss discrimnator -> 1.2781013250350952, loss generator -> 0.6557056903839111
+600: loss discrimnator -> 1.3411117792129517, loss generator -> 0.6671500205993652
+--- Saving images ---
+700: loss discrimnator -> 1.386164665222168, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.386191725730896, loss generator -> 0.6931470036506653
+Epoch 28
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.341217279434204, loss generator -> 0.6713021993637085
+--- Saving images ---
+300: loss discrimnator -> 1.293574333190918, loss generator -> 0.614725649356842
+400: loss discrimnator -> 1.2914752960205078, loss generator -> 0.6271672248840332
+500: loss discrimnator -> 1.362941026687622, loss generator -> 0.6808516979217529
+600: loss discrimnator -> 1.3490031957626343, loss generator -> 0.6405245065689087
+700: loss discrimnator -> 1.3062200546264648, loss generator -> 0.6394273042678833
+--- Saving images ---
+800: loss discrimnator -> 1.3724112510681152, loss generator -> 0.6911489963531494
+900: loss discrimnator -> 1.3065897226333618, loss generator -> 0.6588923931121826
+Epoch 29
+0: loss discrimnator -> 1.2900620698928833, loss generator -> 0.6594153642654419
+100: loss discrimnator -> 1.262704610824585, loss generator -> 0.6161690950393677
+200: loss discrimnator -> 1.2976223230361938, loss generator -> 0.6194347143173218
+--- Saving images ---
+300: loss discrimnator -> 1.3713723421096802, loss generator -> 0.692250669002533
+400: loss discrimnator -> 1.3293505907058716, loss generator -> 0.6205314993858337
+500: loss discrimnator -> 1.2795400619506836, loss generator -> 0.655408501625061
+600: loss discrimnator -> 1.3159607648849487, loss generator -> 0.6473617553710938
+700: loss discrimnator -> 1.3205355405807495, loss generator -> 0.6652594804763794
+--- Saving images ---
+800: loss discrimnator -> 1.313915729522705, loss generator -> 0.6836633682250977
+900: loss discrimnator -> 1.247079610824585, loss generator -> 0.6682113409042358
+Epoch 30
+0: loss discrimnator -> 1.3162097930908203, loss generator -> 0.6875023245811462
+100: loss discrimnator -> 1.342782735824585, loss generator -> 0.644860565662384
+200: loss discrimnator -> 1.3283569812774658, loss generator -> 0.630903959274292
+300: loss discrimnator -> 1.3213934898376465, loss generator -> 0.5902959108352661
+--- Saving images ---
+400: loss discrimnator -> 1.2540072202682495, loss generator -> 0.6495822668075562
+500: loss discrimnator -> 1.3851840496063232, loss generator -> 0.6390178203582764
+600: loss discrimnator -> 1.3935158252716064, loss generator -> 0.6873505115509033
+700: loss discrimnator -> 1.3899424076080322, loss generator -> 0.672438383102417
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 31
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3857041597366333, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862941265106201, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.386977195739746, loss generator -> 0.6907602548599243
+800: loss discrimnator -> 1.3862606287002563, loss generator -> 0.6931370496749878
+900: loss discrimnator -> 1.2834800481796265, loss generator -> 0.6625370383262634
+--- Saving images ---
+Epoch 32
+0: loss discrimnator -> 1.3480339050292969, loss generator -> 0.6341162323951721
+100: loss discrimnator -> 1.3822450637817383, loss generator -> 0.6872538924217224
+200: loss discrimnator -> 1.353689193725586, loss generator -> 0.6499569416046143
+300: loss discrimnator -> 1.266552448272705, loss generator -> 0.6343280673027039
+400: loss discrimnator -> 1.3171353340148926, loss generator -> 0.6739325523376465
+--- Saving images ---
+500: loss discrimnator -> 1.3162989616394043, loss generator -> 0.6411905288696289
+600: loss discrimnator -> 1.2917052507400513, loss generator -> 0.6322292685508728
+700: loss discrimnator -> 1.3017570972442627, loss generator -> 0.6193174123764038
+800: loss discrimnator -> 1.2838542461395264, loss generator -> 0.6282449960708618
+900: loss discrimnator -> 1.3536298274993896, loss generator -> 0.6884864568710327
+Epoch 33
+0: loss discrimnator -> 1.3157007694244385, loss generator -> 0.6310372352600098
+--- Saving images ---
+100: loss discrimnator -> 1.2706587314605713, loss generator -> 0.6225636601448059
+200: loss discrimnator -> 1.2541857957839966, loss generator -> 0.5645115375518799
+300: loss discrimnator -> 1.3135138750076294, loss generator -> 0.676640510559082
+400: loss discrimnator -> 1.359614372253418, loss generator -> 0.6102584004402161
+500: loss discrimnator -> 1.2678202390670776, loss generator -> 0.6252530813217163
+--- Saving images ---
+600: loss discrimnator -> 1.3086453676223755, loss generator -> 0.6202151775360107
+700: loss discrimnator -> 1.3265743255615234, loss generator -> 0.6899831295013428
+800: loss discrimnator -> 1.2828001976013184, loss generator -> 0.597011923789978
+900: loss discrimnator -> 1.3452789783477783, loss generator -> 0.5991858839988708
+Epoch 34
+0: loss discrimnator -> 1.3691010475158691, loss generator -> 0.6762635707855225
+100: loss discrimnator -> 1.3450216054916382, loss generator -> 0.6819826364517212
+--- Saving images ---
+200: loss discrimnator -> 1.3126246929168701, loss generator -> 0.624050498008728
+300: loss discrimnator -> 1.330581545829773, loss generator -> 0.609552800655365
+400: loss discrimnator -> 1.339651107788086, loss generator -> 0.652441143989563
+500: loss discrimnator -> 1.3315004110336304, loss generator -> 0.5289614796638489
+600: loss discrimnator -> 1.335329532623291, loss generator -> 0.6593665480613708
+--- Saving images ---
+700: loss discrimnator -> 1.2999759912490845, loss generator -> 0.6546581387519836
+800: loss discrimnator -> 1.3135113716125488, loss generator -> 0.6483306884765625
+900: loss discrimnator -> 1.3369195461273193, loss generator -> 0.6566137075424194
+Epoch 35
+0: loss discrimnator -> 1.3306095600128174, loss generator -> 0.6617637872695923
+100: loss discrimnator -> 1.3474624156951904, loss generator -> 0.6488211154937744
+--- Saving images ---
+200: loss discrimnator -> 1.3160184621810913, loss generator -> 0.6550329923629761
+300: loss discrimnator -> 1.3885886669158936, loss generator -> 0.5664900541305542
+400: loss discrimnator -> 1.3010644912719727, loss generator -> 0.6496515870094299
+500: loss discrimnator -> 1.3420131206512451, loss generator -> 0.6248605251312256
+600: loss discrimnator -> 1.4263205528259277, loss generator -> 0.6523292660713196
+--- Saving images ---
+700: loss discrimnator -> 1.3432397842407227, loss generator -> 0.6658602356910706
+800: loss discrimnator -> 1.3037292957305908, loss generator -> 0.6470971703529358
+900: loss discrimnator -> 1.3815910816192627, loss generator -> 0.6198903322219849
+Epoch 36
+0: loss discrimnator -> 1.3555712699890137, loss generator -> 0.6663385629653931
+100: loss discrimnator -> 1.3429491519927979, loss generator -> 0.667921781539917
+200: loss discrimnator -> 1.3153817653656006, loss generator -> 0.6752055883407593
+--- Saving images ---
+300: loss discrimnator -> 1.3506405353546143, loss generator -> 0.6834409832954407
+400: loss discrimnator -> 1.301239013671875, loss generator -> 0.6403878927230835
+500: loss discrimnator -> 1.3483625650405884, loss generator -> 0.6546261310577393
+600: loss discrimnator -> 1.393531322479248, loss generator -> 0.6281718015670776
+700: loss discrimnator -> 1.3158025741577148, loss generator -> 0.599465012550354
+--- Saving images ---
+800: loss discrimnator -> 1.344702959060669, loss generator -> 0.6456356048583984
+900: loss discrimnator -> 1.3536561727523804, loss generator -> 0.6549130082130432
+Epoch 37
+0: loss discrimnator -> 1.373814344406128, loss generator -> 0.678286075592041
+100: loss discrimnator -> 1.3557968139648438, loss generator -> 0.66560959815979
+200: loss discrimnator -> 1.2968910932540894, loss generator -> 0.6299794912338257
+--- Saving images ---
+300: loss discrimnator -> 1.2583262920379639, loss generator -> 0.6295375823974609
+400: loss discrimnator -> 1.349323034286499, loss generator -> 0.6632240414619446
+500: loss discrimnator -> 1.3578135967254639, loss generator -> 0.6426456570625305
+600: loss discrimnator -> 1.3136283159255981, loss generator -> 0.6229190826416016
+700: loss discrimnator -> 1.335667371749878, loss generator -> 0.6700378060340881
+--- Saving images ---
+800: loss discrimnator -> 1.364054799079895, loss generator -> 0.6740159392356873
+900: loss discrimnator -> 1.3700520992279053, loss generator -> 0.6930716633796692
+Epoch 38
+0: loss discrimnator -> 1.39223313331604, loss generator -> 0.6516271829605103
+100: loss discrimnator -> 1.3838844299316406, loss generator -> 0.6931402087211609
+200: loss discrimnator -> 1.4193289279937744, loss generator -> 0.5918054580688477
+300: loss discrimnator -> 1.4005956649780273, loss generator -> 0.6827691793441772
+--- Saving images ---
+400: loss discrimnator -> 1.376526117324829, loss generator -> 0.6440434455871582
+500: loss discrimnator -> 1.3127241134643555, loss generator -> 0.6236496567726135
+600: loss discrimnator -> 1.3339107036590576, loss generator -> 0.6629387140274048
+700: loss discrimnator -> 1.3455615043640137, loss generator -> 0.6753016710281372
+800: loss discrimnator -> 1.3442960977554321, loss generator -> 0.6747509241104126
+--- Saving images ---
+900: loss discrimnator -> 1.3354802131652832, loss generator -> 0.6755537390708923
+Epoch 39
+0: loss discrimnator -> 1.3554714918136597, loss generator -> 0.6695963144302368
+100: loss discrimnator -> 1.3412281274795532, loss generator -> 0.6586861610412598
+200: loss discrimnator -> 1.384232759475708, loss generator -> 0.6856515407562256
+300: loss discrimnator -> 1.3564739227294922, loss generator -> 0.674767255783081
+400: loss discrimnator -> 1.3582265377044678, loss generator -> 0.5897606611251831
+--- Saving images ---
+500: loss discrimnator -> 1.3830291032791138, loss generator -> 0.6790401339530945
+600: loss discrimnator -> 1.385558009147644, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.386269450187683, loss generator -> 0.6921554803848267
+800: loss discrimnator -> 1.3862762451171875, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3925162553787231, loss generator -> 0.6930947303771973
+--- Saving images ---
+Epoch 40
+0: loss discrimnator -> 1.3892278671264648, loss generator -> 0.6879806518554688
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.693146824836731
+200: loss discrimnator -> 1.386258840560913, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3822948932647705, loss generator -> 0.693132221698761
+--- Saving images ---
+500: loss discrimnator -> 1.3827893733978271, loss generator -> 0.6747452616691589
+600: loss discrimnator -> 1.3859472274780273, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3460519313812256, loss generator -> 0.6450436115264893
+800: loss discrimnator -> 1.3863027095794678, loss generator -> 0.6695200204849243
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931130886077881
+Epoch 41
+0: loss discrimnator -> 1.3862005472183228, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3063205480575562, loss generator -> 0.6855461597442627
+200: loss discrimnator -> 1.3354490995407104, loss generator -> 0.673338770866394
+300: loss discrimnator -> 1.3981475830078125, loss generator -> 0.6882818937301636
+400: loss discrimnator -> 1.322085976600647, loss generator -> 0.6810141801834106
+500: loss discrimnator -> 1.3718420267105103, loss generator -> 0.6931458711624146
+--- Saving images ---
+600: loss discrimnator -> 1.3571511507034302, loss generator -> 0.6868586540222168
+700: loss discrimnator -> 1.2914115190505981, loss generator -> 0.6241552829742432
+800: loss discrimnator -> 1.3271485567092896, loss generator -> 0.6660133004188538
+900: loss discrimnator -> 1.3604488372802734, loss generator -> 0.6608014106750488
+Epoch 42
+0: loss discrimnator -> 1.352325677871704, loss generator -> 0.6567021012306213
+100: loss discrimnator -> 1.3518707752227783, loss generator -> 0.6550551652908325
+--- Saving images ---
+200: loss discrimnator -> 1.3041027784347534, loss generator -> 0.595425009727478
+300: loss discrimnator -> 1.3130593299865723, loss generator -> 0.6698328256607056
+400: loss discrimnator -> 1.3481943607330322, loss generator -> 0.6413165926933289
+500: loss discrimnator -> 1.334202766418457, loss generator -> 0.6830041408538818
+600: loss discrimnator -> 1.3264857530593872, loss generator -> 0.6618282794952393
+--- Saving images ---
+700: loss discrimnator -> 1.3214094638824463, loss generator -> 0.6319385170936584
+800: loss discrimnator -> 1.3081531524658203, loss generator -> 0.6420091390609741
+900: loss discrimnator -> 1.3319876194000244, loss generator -> 0.6107461452484131
+Epoch 43
+0: loss discrimnator -> 1.3138736486434937, loss generator -> 0.6583575010299683
+100: loss discrimnator -> 1.2770662307739258, loss generator -> 0.6440334320068359
+--- Saving images ---
+200: loss discrimnator -> 1.3750543594360352, loss generator -> 0.6696450710296631
+300: loss discrimnator -> 1.362424612045288, loss generator -> 0.6529980897903442
+400: loss discrimnator -> 1.3481241464614868, loss generator -> 0.6477311849594116
+500: loss discrimnator -> 1.3199057579040527, loss generator -> 0.6421289443969727
+600: loss discrimnator -> 1.304032802581787, loss generator -> 0.6409953236579895
+--- Saving images ---
+700: loss discrimnator -> 1.3433198928833008, loss generator -> 0.6750974655151367
+800: loss discrimnator -> 1.3283601999282837, loss generator -> 0.6424249410629272
+900: loss discrimnator -> 1.3097680807113647, loss generator -> 0.6386511325836182
+Epoch 44
+0: loss discrimnator -> 1.4298551082611084, loss generator -> 0.663506031036377
+100: loss discrimnator -> 1.3089878559112549, loss generator -> 0.6343774795532227
+200: loss discrimnator -> 1.3805029392242432, loss generator -> 0.6865712404251099
+--- Saving images ---
+300: loss discrimnator -> 1.3844548463821411, loss generator -> 0.6870055198669434
+400: loss discrimnator -> 1.3858643770217896, loss generator -> 0.6910462379455566
+500: loss discrimnator -> 1.31894850730896, loss generator -> 0.6041076183319092
+600: loss discrimnator -> 1.3621325492858887, loss generator -> 0.6435500979423523
+700: loss discrimnator -> 1.386733889579773, loss generator -> 0.6711772680282593
+--- Saving images ---
+800: loss discrimnator -> 1.340987205505371, loss generator -> 0.633868396282196
+900: loss discrimnator -> 1.3565106391906738, loss generator -> 0.6293595433235168
+Epoch 45
+0: loss discrimnator -> 1.3235766887664795, loss generator -> 0.6257056593894958
+100: loss discrimnator -> 1.3329544067382812, loss generator -> 0.6643672585487366
+200: loss discrimnator -> 1.373996376991272, loss generator -> 0.6686930656433105
+--- Saving images ---
+300: loss discrimnator -> 1.4008874893188477, loss generator -> 0.6677993535995483
+400: loss discrimnator -> 1.3377959728240967, loss generator -> 0.6442492008209229
+500: loss discrimnator -> 1.3794440031051636, loss generator -> 0.6378364562988281
+600: loss discrimnator -> 1.3361009359359741, loss generator -> 0.6623042821884155
+700: loss discrimnator -> 1.3610002994537354, loss generator -> 0.6777383089065552
+--- Saving images ---
+800: loss discrimnator -> 1.3421175479888916, loss generator -> 0.6561223268508911
+900: loss discrimnator -> 1.3285387754440308, loss generator -> 0.615336537361145
+Epoch 46
+0: loss discrimnator -> 1.298653483390808, loss generator -> 0.6311437487602234
+100: loss discrimnator -> 1.3817150592803955, loss generator -> 0.680989146232605
+200: loss discrimnator -> 1.3460485935211182, loss generator -> 0.6382277011871338
+300: loss discrimnator -> 1.3572144508361816, loss generator -> 0.6672326326370239
+--- Saving images ---
+400: loss discrimnator -> 1.3850948810577393, loss generator -> 0.6758700609207153
+500: loss discrimnator -> 1.3754894733428955, loss generator -> 0.6447994709014893
+600: loss discrimnator -> 1.3657147884368896, loss generator -> 0.6330568790435791
+700: loss discrimnator -> 1.3899043798446655, loss generator -> 0.6641805171966553
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3764758110046387, loss generator -> 0.6699135303497314
+Epoch 47
+0: loss discrimnator -> 1.3856912851333618, loss generator -> 0.6827537417411804
+100: loss discrimnator -> 1.3412936925888062, loss generator -> 0.5956683158874512
+200: loss discrimnator -> 1.3777577877044678, loss generator -> 0.6913490891456604
+300: loss discrimnator -> 1.3922524452209473, loss generator -> 0.6897966265678406
+400: loss discrimnator -> 1.2977347373962402, loss generator -> 0.6617591381072998
+--- Saving images ---
+500: loss discrimnator -> 1.3780816793441772, loss generator -> 0.6767731308937073
+600: loss discrimnator -> 1.4135379791259766, loss generator -> 0.6575649976730347
+700: loss discrimnator -> 1.3220536708831787, loss generator -> 0.6542909741401672
+800: loss discrimnator -> 1.3352108001708984, loss generator -> 0.6630080938339233
+900: loss discrimnator -> 1.293149709701538, loss generator -> 0.6424892544746399
+--- Saving images ---
+Epoch 48
+0: loss discrimnator -> 1.3507640361785889, loss generator -> 0.6837505102157593
+100: loss discrimnator -> 1.3745098114013672, loss generator -> 0.69246506690979
+200: loss discrimnator -> 1.324414849281311, loss generator -> 0.6443558931350708
+300: loss discrimnator -> 1.3258899450302124, loss generator -> 0.6119577288627625
+400: loss discrimnator -> 1.3820205926895142, loss generator -> 0.6697719693183899
+--- Saving images ---
+500: loss discrimnator -> 1.3564121723175049, loss generator -> 0.6767387390136719
+600: loss discrimnator -> 1.3741401433944702, loss generator -> 0.6845136880874634
+700: loss discrimnator -> 1.3866052627563477, loss generator -> 0.6902869939804077
+800: loss discrimnator -> 1.3858458995819092, loss generator -> 0.6931470632553101
+900: loss discrimnator -> 1.3750251531600952, loss generator -> 0.6875754594802856
+Epoch 49
+0: loss discrimnator -> 1.3852229118347168, loss generator -> 0.6871442794799805
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862942457199097, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.386291265487671, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862707614898682, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862448930740356, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3685784339904785, loss generator -> 0.6784896850585938
+900: loss discrimnator -> 1.376297950744629, loss generator -> 0.6829996705055237
+Epoch 50
+0: loss discrimnator -> 1.3928176164627075, loss generator -> 0.6734763383865356
+100: loss discrimnator -> 1.3757133483886719, loss generator -> 0.6931066513061523
+--- Saving images ---
+200: loss discrimnator -> 1.3495891094207764, loss generator -> 0.6775434613227844
+300: loss discrimnator -> 1.3746364116668701, loss generator -> 0.6931172013282776
+400: loss discrimnator -> 1.385788917541504, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3770725727081299, loss generator -> 0.6900961399078369
+600: loss discrimnator -> 1.3801071643829346, loss generator -> 0.6720609068870544
+--- Saving images ---
+700: loss discrimnator -> 1.3978018760681152, loss generator -> 0.681224524974823
+800: loss discrimnator -> 1.3730237483978271, loss generator -> 0.6888246536254883
+900: loss discrimnator -> 1.3789633512496948, loss generator -> 0.665435791015625
+Epoch 51
+0: loss discrimnator -> 1.312790870666504, loss generator -> 0.668184757232666
+100: loss discrimnator -> 1.324864149093628, loss generator -> 0.6792751550674438
+--- Saving images ---
+200: loss discrimnator -> 1.4015841484069824, loss generator -> 0.6662931442260742
+300: loss discrimnator -> 1.3817839622497559, loss generator -> 0.6702334880828857
+400: loss discrimnator -> 1.2653720378875732, loss generator -> 0.6197686791419983
+500: loss discrimnator -> 1.4520494937896729, loss generator -> 0.6020995378494263
+600: loss discrimnator -> 1.314496636390686, loss generator -> 0.6557130217552185
+--- Saving images ---
+700: loss discrimnator -> 1.3523105382919312, loss generator -> 0.6373264789581299
+800: loss discrimnator -> 1.2723078727722168, loss generator -> 0.5949234962463379
+900: loss discrimnator -> 1.3501311540603638, loss generator -> 0.6316049695014954
+Epoch 52
+0: loss discrimnator -> 1.332728624343872, loss generator -> 0.6771038770675659
+100: loss discrimnator -> 1.3909859657287598, loss generator -> 0.6895372271537781
+200: loss discrimnator -> 1.3802282810211182, loss generator -> 0.6884354948997498
+--- Saving images ---
+300: loss discrimnator -> 1.3861922025680542, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3605564832687378, loss generator -> 0.6765989065170288
+500: loss discrimnator -> 1.323254108428955, loss generator -> 0.6609903573989868
+600: loss discrimnator -> 1.3368346691131592, loss generator -> 0.6812920570373535
+700: loss discrimnator -> 1.3385183811187744, loss generator -> 0.6381197571754456
+--- Saving images ---
+800: loss discrimnator -> 1.3608434200286865, loss generator -> 0.6873219013214111
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 53
+0: loss discrimnator -> 1.386293888092041, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3866972923278809, loss generator -> 0.690710186958313
+200: loss discrimnator -> 1.3903590440750122, loss generator -> 0.6491392254829407
+--- Saving images ---
+300: loss discrimnator -> 1.3394250869750977, loss generator -> 0.682833731174469
+400: loss discrimnator -> 1.3226698637008667, loss generator -> 0.6388819217681885
+500: loss discrimnator -> 1.305128812789917, loss generator -> 0.6347721219062805
+600: loss discrimnator -> 1.3969993591308594, loss generator -> 0.692947268486023
+700: loss discrimnator -> 1.3815679550170898, loss generator -> 0.6910261511802673
+--- Saving images ---
+800: loss discrimnator -> 1.3862972259521484, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 54
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862942457199097, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3653790950775146, loss generator -> 0.6920909881591797
+300: loss discrimnator -> 1.3862919807434082, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3799631595611572, loss generator -> 0.6836369037628174
+500: loss discrimnator -> 1.326318621635437, loss generator -> 0.6689890027046204
+600: loss discrimnator -> 1.2660918235778809, loss generator -> 0.6057871580123901
+700: loss discrimnator -> 1.361555814743042, loss generator -> 0.6771900653839111
+800: loss discrimnator -> 1.365441083908081, loss generator -> 0.6023404598236084
+--- Saving images ---
+900: loss discrimnator -> 1.2801549434661865, loss generator -> 0.6400743722915649
+Epoch 55
+0: loss discrimnator -> 1.3197181224822998, loss generator -> 0.649786651134491
+100: loss discrimnator -> 1.376312017440796, loss generator -> 0.6909050941467285
+200: loss discrimnator -> 1.393584132194519, loss generator -> 0.6807141900062561
+300: loss discrimnator -> 1.4002799987792969, loss generator -> 0.6400331854820251
+400: loss discrimnator -> 1.3230600357055664, loss generator -> 0.615222156047821
+--- Saving images ---
+500: loss discrimnator -> 1.3849321603775024, loss generator -> 0.6464345455169678
+600: loss discrimnator -> 1.3362681865692139, loss generator -> 0.6439388394355774
+700: loss discrimnator -> 1.3152680397033691, loss generator -> 0.6536807417869568
+800: loss discrimnator -> 1.2975714206695557, loss generator -> 0.6761451959609985
+900: loss discrimnator -> 1.2807040214538574, loss generator -> 0.6592863202095032
+--- Saving images ---
+Epoch 56
+0: loss discrimnator -> 1.2999677658081055, loss generator -> 0.6493062973022461
+100: loss discrimnator -> 1.3242652416229248, loss generator -> 0.6727005243301392
+200: loss discrimnator -> 1.3663177490234375, loss generator -> 0.6855002641677856
+300: loss discrimnator -> 1.3298242092132568, loss generator -> 0.6555577516555786
+400: loss discrimnator -> 1.3727962970733643, loss generator -> 0.6266849040985107
+--- Saving images ---
+500: loss discrimnator -> 1.3757025003433228, loss generator -> 0.6014620065689087
+600: loss discrimnator -> 1.3469977378845215, loss generator -> 0.6745700836181641
+700: loss discrimnator -> 1.337246298789978, loss generator -> 0.6721540689468384
+800: loss discrimnator -> 1.3601665496826172, loss generator -> 0.6767718195915222
+900: loss discrimnator -> 1.3449008464813232, loss generator -> 0.5988982319831848
+Epoch 57
+0: loss discrimnator -> 1.371182918548584, loss generator -> 0.6708610653877258
+--- Saving images ---
+100: loss discrimnator -> 1.3183903694152832, loss generator -> 0.6498100757598877
+200: loss discrimnator -> 1.3478974103927612, loss generator -> 0.6786893010139465
+300: loss discrimnator -> 1.3601551055908203, loss generator -> 0.6623754501342773
+400: loss discrimnator -> 1.3244125843048096, loss generator -> 0.6576857566833496
+500: loss discrimnator -> 1.3541133403778076, loss generator -> 0.6102137565612793
+--- Saving images ---
+600: loss discrimnator -> 1.3291099071502686, loss generator -> 0.6510156989097595
+700: loss discrimnator -> 1.377590537071228, loss generator -> 0.6931299567222595
+800: loss discrimnator -> 1.3972700834274292, loss generator -> 0.6914962530136108
+900: loss discrimnator -> 1.3452789783477783, loss generator -> 0.6369926929473877
+Epoch 58
+0: loss discrimnator -> 1.3307819366455078, loss generator -> 0.6492331027984619
+--- Saving images ---
+100: loss discrimnator -> 1.3585972785949707, loss generator -> 0.6552380323410034
+200: loss discrimnator -> 1.3390222787857056, loss generator -> 0.6711131930351257
+300: loss discrimnator -> 1.325861930847168, loss generator -> 0.6578244566917419
+400: loss discrimnator -> 1.3484082221984863, loss generator -> 0.666032075881958
+500: loss discrimnator -> 1.386061191558838, loss generator -> 0.6830253601074219
+--- Saving images ---
+600: loss discrimnator -> 1.3071064949035645, loss generator -> 0.6585851907730103
+700: loss discrimnator -> 1.3619744777679443, loss generator -> 0.6832844018936157
+800: loss discrimnator -> 1.3385347127914429, loss generator -> 0.6606217622756958
+900: loss discrimnator -> 1.3609195947647095, loss generator -> 0.6066870093345642
+Epoch 59
+0: loss discrimnator -> 1.3601880073547363, loss generator -> 0.6699240207672119
+100: loss discrimnator -> 1.389252781867981, loss generator -> 0.6600568294525146
+--- Saving images ---
+200: loss discrimnator -> 1.3392752408981323, loss generator -> 0.670016884803772
+300: loss discrimnator -> 1.3607970476150513, loss generator -> 0.6643920540809631
+400: loss discrimnator -> 1.3694217205047607, loss generator -> 0.6222019195556641
+500: loss discrimnator -> 1.3667124509811401, loss generator -> 0.6783015727996826
+600: loss discrimnator -> 1.3941216468811035, loss generator -> 0.6905635595321655
+--- Saving images ---
+700: loss discrimnator -> 1.3816604614257812, loss generator -> 0.6473450064659119
+800: loss discrimnator -> 1.332972764968872, loss generator -> 0.6455774307250977
+900: loss discrimnator -> 1.331327199935913, loss generator -> 0.6785764694213867
+Epoch 60
+0: loss discrimnator -> 1.3373117446899414, loss generator -> 0.653022825717926
+100: loss discrimnator -> 1.3562698364257812, loss generator -> 0.6815468072891235
+200: loss discrimnator -> 1.362077236175537, loss generator -> 0.6861366629600525
+--- Saving images ---
+300: loss discrimnator -> 1.3183190822601318, loss generator -> 0.6642687320709229
+400: loss discrimnator -> 1.392175316810608, loss generator -> 0.629215657711029
+500: loss discrimnator -> 1.3385776281356812, loss generator -> 0.6855030655860901
+600: loss discrimnator -> 1.3492730855941772, loss generator -> 0.679826021194458
+700: loss discrimnator -> 1.3970584869384766, loss generator -> 0.6504585146903992
+--- Saving images ---
+800: loss discrimnator -> 1.3572654724121094, loss generator -> 0.6499990820884705
+900: loss discrimnator -> 1.3808367252349854, loss generator -> 0.644340991973877
+Epoch 61
+0: loss discrimnator -> 1.3862148523330688, loss generator -> 0.6915204524993896
+100: loss discrimnator -> 1.3538058996200562, loss generator -> 0.6570823788642883
+200: loss discrimnator -> 1.3884098529815674, loss generator -> 0.6727482676506042
+--- Saving images ---
+300: loss discrimnator -> 1.3345983028411865, loss generator -> 0.6307350397109985
+400: loss discrimnator -> 1.3585467338562012, loss generator -> 0.686125636100769
+500: loss discrimnator -> 1.2901304960250854, loss generator -> 0.6196116805076599
+600: loss discrimnator -> 1.3664274215698242, loss generator -> 0.6862183809280396
+700: loss discrimnator -> 1.3567471504211426, loss generator -> 0.6860450506210327
+--- Saving images ---
+800: loss discrimnator -> 1.3485240936279297, loss generator -> 0.6133331060409546
+900: loss discrimnator -> 1.2697545289993286, loss generator -> 0.6753795146942139
+Epoch 62
+0: loss discrimnator -> 1.3580334186553955, loss generator -> 0.6746045351028442
+100: loss discrimnator -> 1.4162729978561401, loss generator -> 0.6905263662338257
+200: loss discrimnator -> 1.3870935440063477, loss generator -> 0.6930848360061646
+300: loss discrimnator -> 1.3049094676971436, loss generator -> 0.6389753222465515
+--- Saving images ---
+400: loss discrimnator -> 1.4166481494903564, loss generator -> 0.6707478761672974
+500: loss discrimnator -> 1.3758974075317383, loss generator -> 0.6775190830230713
+600: loss discrimnator -> 1.3700556755065918, loss generator -> 0.685688853263855
+700: loss discrimnator -> 1.3838553428649902, loss generator -> 0.6912379264831543
+800: loss discrimnator -> 1.3377302885055542, loss generator -> 0.6621728539466858
+--- Saving images ---
+900: loss discrimnator -> 1.3388874530792236, loss generator -> 0.6058661937713623
+Epoch 63
+0: loss discrimnator -> 1.342881202697754, loss generator -> 0.6607006788253784
+100: loss discrimnator -> 1.3201031684875488, loss generator -> 0.6715238094329834
+200: loss discrimnator -> 1.4098601341247559, loss generator -> 0.680203914642334
+300: loss discrimnator -> 1.3822041749954224, loss generator -> 0.6926286220550537
+400: loss discrimnator -> 1.3835716247558594, loss generator -> 0.6448840498924255
+--- Saving images ---
+500: loss discrimnator -> 1.330146074295044, loss generator -> 0.6663694381713867
+600: loss discrimnator -> 1.3118298053741455, loss generator -> 0.6697288155555725
+700: loss discrimnator -> 1.3819103240966797, loss generator -> 0.6694002151489258
+800: loss discrimnator -> 1.3959310054779053, loss generator -> 0.6896755695343018
+900: loss discrimnator -> 1.3933780193328857, loss generator -> 0.6930787563323975
+--- Saving images ---
+Epoch 64
+0: loss discrimnator -> 1.3862950801849365, loss generator -> 0.6925393342971802
+100: loss discrimnator -> 1.3862950801849365, loss generator -> 0.6930867433547974
+200: loss discrimnator -> 1.3812880516052246, loss generator -> 0.6931442022323608
+300: loss discrimnator -> 1.3862929344177246, loss generator -> 0.6931437253952026
+400: loss discrimnator -> 1.3878307342529297, loss generator -> 0.6842634677886963
+--- Saving images ---
+500: loss discrimnator -> 1.361966609954834, loss generator -> 0.672672688961029
+600: loss discrimnator -> 1.4045642614364624, loss generator -> 0.5885401368141174
+700: loss discrimnator -> 1.3797540664672852, loss generator -> 0.6931338906288147
+800: loss discrimnator -> 1.38910710811615, loss generator -> 0.6708593368530273
+900: loss discrimnator -> 1.3860588073730469, loss generator -> 0.6931471824645996
+Epoch 65
+0: loss discrimnator -> 1.3862990140914917, loss generator -> 0.6931470632553101
+--- Saving images ---
+100: loss discrimnator -> 1.3462331295013428, loss generator -> 0.6930930614471436
+200: loss discrimnator -> 1.335993766784668, loss generator -> 0.6238694190979004
+300: loss discrimnator -> 1.4174519777297974, loss generator -> 0.5712502002716064
+400: loss discrimnator -> 1.373016119003296, loss generator -> 0.6926281452178955
+500: loss discrimnator -> 1.3860809803009033, loss generator -> 0.6871412992477417
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6881474852561951
+700: loss discrimnator -> 1.3862944841384888, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3864984512329102, loss generator -> 0.693146824836731
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931414604187012
+Epoch 66
+0: loss discrimnator -> 1.3861594200134277, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.385588526725769, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862948417663574, loss generator -> 0.6931470632553101
+300: loss discrimnator -> 1.3863003253936768, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 67
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 68
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 69
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 70
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 71
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+Epoch 72
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 73
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 74
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 75
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 76
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 77
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 78
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 79
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 80
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 81
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 82
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 83
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 84
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 85
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 86
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 87
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 88
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 89
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 90
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 91
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 92
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 93
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 94
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 95
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 96
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 97
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 98
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 99
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 100
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 101
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 102
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 103
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 104
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 105
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 106
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 107
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 108
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 109
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 110
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 111
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 112
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 113
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 114
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 115
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 116
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 117
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 118
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 119
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 120
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 121
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 122
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 123
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 124
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 125
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 126
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 127
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 128
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+Epoch 129
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 130
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 131
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 132
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 133
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 134
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 135
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 136
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+Epoch 137
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 138
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 139
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 140
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 141
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 142
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 143
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 144
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+Epoch 145
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 146
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 147
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 148
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 149
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 150
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 151
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 152
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+Epoch 153
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 154
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 155
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 156
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 157
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 158
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 159
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 160
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+Epoch 161
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 162
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 163
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 164
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 165
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 166
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 167
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 168
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+Epoch 169
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 170
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 171
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 172
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 173
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 174
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 175
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 176
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+Epoch 177
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 178
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 179
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 180
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 181
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 182
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 183
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 184
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+Epoch 185
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 186
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 187
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 188
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 189
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 190
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 191
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 192
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+Epoch 193
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 194
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 195
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 196
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 197
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 198
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+Epoch 199
+0: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+100: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+200: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+300: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+400: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+500: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+600: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+700: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+800: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+--- Saving images ---
+900: loss discrimnator -> 1.3862943649291992, loss generator -> 0.6931471824645996
+ 
+ ------ Job convnet_pytorch is finished -------
