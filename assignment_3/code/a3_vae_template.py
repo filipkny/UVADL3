@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from torchvision.utils import make_grid
 
 from datasets.bmnist import bmnist
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
 class Encoder(nn.Module):

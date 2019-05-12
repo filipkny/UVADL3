@@ -8,6 +8,7 @@ import numpy as np
 from datasets.mnist import mnist
 import os
 from torchvision.utils import make_grid
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
 def log_prior(x):
@@ -23,12 +24,7 @@ def sample_prior(size):
     """
     Sample from a standard Gaussian.
     """
-    raise NotImplementedError
-
-    if torch.cuda.is_available():
-        sample = sample.cuda()
-
-    return sample
+    return torch.from_numpy(np.random.normal(0,1,size)).to(device)
 
 
 def get_mask():

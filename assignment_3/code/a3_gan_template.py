@@ -5,9 +5,11 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torchvision.transforms as transforms
-from torchvision.utils import save_image
+from torchvision.utils import save_image, make_grid
 from torchvision import datasets
+import matplotlib.pyplot as plt
 
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 class Generator(nn.Module):
     def __init__(self):
@@ -41,7 +43,7 @@ class Generator(nn.Module):
             nn.BatchNorm1d(1024),
             nn.LeakyReLU(0.2),
             nn.Linear(1024, 784),
-            nn.Sigmoid() # choose a different output non linearity?
+            nn.Tanh() # choose a different output non linearity?
         )
 
     def forward(self, z):
@@ -64,8 +66,10 @@ class Discriminator(nn.Module):
         self.model = nn.Sequential(
             nn.Linear(784, 512),
             nn.LeakyReLU(0.2),
+            nn.Dropout(0.3),
             nn.Linear(512, 256),
             nn.LeakyReLU(0.2),
+            nn.Dropout(0.3),
             nn.Linear(256, 1),
             nn.Sigmoid() # use different non linearity?
         )
@@ -75,36 +79,45 @@ class Discriminator(nn.Module):
 
 
 def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print("device:", device)
 
+    # Init models and loss functioon
     discriminator = discriminator.to(device)
     generator = generator.to(device)
     criterion = nn.BCEWithLogitsLoss().to(device)
 
+    # Data saving variables
+    d_losses = []
+    g_losses = []
+
     for epoch in range(args.n_epochs):
         print("Epoch {}".format(epoch))
         for i, (imgs, _) in enumerate(dataloader):
-            real_labels = torch.ones((imgs.shape[0],1)).to(device)
-            fake_labels = torch.zeros((imgs.shape[0],1)).to(device)
 
             imgs.cuda()
             imgs.to(device)
 
             # Train Discriminator
             # -------------------
-            optimizer_D.zero_grad()
 
+            # Get predictions on real images and compute respective loss
             real_imgs = imgs.view(-1, 784).to(device)
-            z = torch.randn(args.batch_size, args.latent_dim, device=device)
             real_predictions = discriminator.forward(real_imgs)
-            fake_predictions = discriminator.forward(generator(z))
+            real_labels = torch.ones((real_predictions.shape[0], 1)).to(device)
+            real_loss = criterion(real_predictions, real_labels)
 
-            # Compute loss
-            loss_real = criterion(real_predictions, real_labels)
-            loss_fake = criterion(fake_predictions, fake_labels)
-            loss_d = loss_real + loss_fake
+            # Get predictions on fake images and compute respective loss
+            z = torch.randn(args.batch_size, args.latent_dim, device=device)
+            fake_images = generator(z)
+            fake_predictions = discriminator.forward(fake_images )
+            fake_labels = torch.zeros((fake_predictions.shape[0],1)).to(device)
+            fake_loss = criterion(fake_predictions, fake_labels)
 
+            # Compute total loss
+            loss_d = real_loss + fake_loss
+            d_losses.append(loss_d.data.item())
+
+            # Train disriminator
             optimizer_D.zero_grad()
             loss_d.backward(retain_graph=True)
             optimizer_D.step()
@@ -112,30 +125,52 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
 
             # Train Generator
             # ---------------
+
+            # Generate fake images from noise z
             z = torch.randn(args.batch_size, args.latent_dim,device=device)
             fake_imgs = generator(z).to(device)
-            d_fake = discriminator(fake_imgs).to(device)
-            loss_gen = criterion(d_fake, real_labels)
 
+            # Use descriminator to make predictions and then compute generator loss
+            fake_predictions = discriminator(fake_imgs).to(device)
+            real_labels = torch.ones((fake_predictions.shape[0],1)).to(device)
+            loss_gen = criterion(fake_predictions, real_labels)
+            g_losses.append(loss_gen.data.item())
+
+            # Train generator
             optimizer_G.zero_grad()
             loss_gen.backward(retain_graph=True)
             optimizer_G.step()
 
-
+            # Print progress
             if i % 100 == 0:
-                print("{}: loss discrimnator -> {}, loss generator -> {}, acc {}".format(i,loss_d,loss_gen,1))
+                print("{}: loss discrimnator -> {}, loss generator -> {}".format(i,loss_d,loss_gen))
+
             # Save Images
             # -----------
             batches_done = epoch * len(dataloader) + i
             if batches_done % args.save_interval == 0:
+                print("--- Saving images ---")
                 # You can use the function save_image(Tensor (shape Bx1x28x28),
                 # filename, number of rows, normalize) to save the generated
                 # images, e.g.:
-                # save_image(gen_imgs[:25],
-                #            'images/{}.png'.format(batches_done),
-                #            nrow=5, normalize=True)
-                pass
+                img_sample = mk_imgs(generator)
+                gen_imgs_colour = torch.empty(25, 3, 28, 28)
+                for i in range(3):
+                    gen_imgs_colour[:, i, :, :] = img_sample
+                grid = make_grid(gen_imgs_colour, nrow=5, normalize=True).permute(1, 2, 0)
+                plot_name = os.path.join(os.getcwd(), "images/image_{}.png".format(batches_done))
+                plt.imsave(plot_name, grid)
 
+            # # Reset descriminator
+            # if len(d_losses) > 5 and d_losses[-1] == d_losses[-2]:
+            #     print(" -- RESTARTING DISCRIMINATOR --")
+            #     discriminator = Discriminator().to(device)
+
+
+def mk_imgs(generator):
+    z = torch.from_numpy(np.random.normal(0, 1, (25, 100))).to(device=device, dtype=torch.float)
+    imgs = generator.forward(z).view(25, 28, 28).detach()
+    return imgs
 
 def main():
     # Create output image directory
