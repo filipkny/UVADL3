@@ -1,18 +1,22 @@
 import argparse
+import datetime
 import os
+import pickle
 
 import numpy as np
+import matplotlib.pyplot as plt
 import torch
 import torch.nn as nn
 import torchvision.transforms as transforms
 from torchvision.utils import save_image, make_grid
 from torchvision import datasets
-import matplotlib.pyplot as plt
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+SAVE = True
+sess_id = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
 
 class Generator(nn.Module):
-    def __init__(self):
+    def __init__(self, dropout = False):
         super(Generator, self).__init__()
 
         # Construct generator. You are free to experiment with your model,
@@ -30,21 +34,43 @@ class Generator(nn.Module):
         #   LeakyReLU(0.2)
         #   Linear 1024 -> 768
         #   Output non-linearity
-        self.model = nn.Sequential(
-            nn.Linear(args.latent_dim, 128),
-            nn.LeakyReLU(0.2),
-            nn.Linear(128,256),
-            nn.BatchNorm1d(256),
-            nn.LeakyReLU(0.2),
-            nn.Linear(256, 512),
-            nn.BatchNorm1d(512),
-            nn.LeakyReLU(0.2),
-            nn.Linear(512, 1024),
-            nn.BatchNorm1d(1024),
-            nn.LeakyReLU(0.2),
-            nn.Linear(1024, 784),
-            nn.Tanh() # choose a different output non linearity?
-        )
+
+        if dropout:
+            self.model = nn.Sequential(
+                nn.Linear(args.latent_dim, 128),
+                nn.LeakyReLU(0.2),
+                nn.Dropout(0.3),
+                nn.Linear(128, 256),
+                nn.BatchNorm1d(256),
+                nn.LeakyReLU(0.2),
+                nn.Dropout(0.3),
+                nn.Linear(256, 512),
+                nn.BatchNorm1d(512),
+                nn.LeakyReLU(0.2),
+                nn.Dropout(0.3),
+                nn.Linear(512, 1024),
+                nn.BatchNorm1d(1024),
+                nn.LeakyReLU(0.2),
+                nn.Dropout(0.3),
+                nn.Linear(1024, 784),
+                nn.Tanh()  # choose a different output non linearity?
+            )
+        else:
+            self.model = nn.Sequential(
+                nn.Linear(args.latent_dim, 128),
+                nn.LeakyReLU(0.2),
+                nn.Linear(128,256),
+                nn.BatchNorm1d(256),
+                nn.LeakyReLU(0.2),
+                nn.Linear(256, 512),
+                nn.BatchNorm1d(512),
+                nn.LeakyReLU(0.2),
+                nn.Linear(512, 1024),
+                nn.BatchNorm1d(1024),
+                nn.LeakyReLU(0.2),
+                nn.Linear(1024, 784),
+                nn.Tanh() # choose a different output non linearity?
+            )
 
     def forward(self, z):
         # Generate images from z
@@ -89,6 +115,8 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
     # Data saving variables
     d_losses = []
     g_losses = []
+    avg_d_losses = []
+    avg_g_losses = []
 
     for epoch in range(args.n_epochs):
         print("Epoch {}".format(epoch))
@@ -96,32 +124,6 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
 
             imgs.cuda()
             imgs.to(device)
-
-            # Train Discriminator
-            # -------------------
-
-            # Get predictions on real images and compute respective loss
-            real_imgs = imgs.view(-1, 784).to(device)
-            real_predictions = discriminator.forward(real_imgs)
-            real_labels = torch.ones((real_predictions.shape[0], 1)).to(device)
-            real_loss = criterion(real_predictions, real_labels)
-
-            # Get predictions on fake images and compute respective loss
-            z = torch.randn(args.batch_size, args.latent_dim, device=device)
-            fake_images = generator(z)
-            fake_predictions = discriminator.forward(fake_images )
-            fake_labels = torch.zeros((fake_predictions.shape[0],1)).to(device)
-            fake_loss = criterion(fake_predictions, fake_labels)
-
-            # Compute total loss
-            loss_d = real_loss + fake_loss
-            d_losses.append(loss_d.data.item())
-
-            # Train disriminator
-            optimizer_D.zero_grad()
-            loss_d.backward(retain_graph=True)
-            optimizer_D.step()
-
 
             # Train Generator
             # ---------------
@@ -132,14 +134,48 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
 
             # Use descriminator to make predictions and then compute generator loss
             fake_predictions = discriminator(fake_imgs).to(device)
-            real_labels = torch.ones((fake_predictions.shape[0],1)).to(device)
-            loss_gen = criterion(fake_predictions, real_labels)
+            # real_labels = torch.ones((fake_predictions.shape[0],1)).to(device)
+            # loss_gen = criterion(fake_predictions, real_labels)
+            log_probs_fake = torch.log(fake_predictions)
+            loss_gen = - torch.mean(log_probs_fake)
             g_losses.append(loss_gen.data.item())
 
             # Train generator
             optimizer_G.zero_grad()
             loss_gen.backward(retain_graph=True)
             optimizer_G.step()
+
+            # Train Discriminator
+            # -------------------
+
+            # Get predictions on real images and compute respective loss
+            real_imgs = imgs.view(-1, 784).to(device)
+            real_predictions = discriminator.forward(real_imgs)
+            # real_labels = torch.ones((real_predictions.shape[0], 1)).to(device)
+            # real_loss = criterion(real_predictions, real_labels)
+
+            # Get predictions on fake images and compute respective loss
+            z = torch.randn(args.batch_size, args.latent_dim, device=device)
+            fake_images = generator(z)
+            fake_predictions = discriminator.forward(fake_images)
+            # fake_labels = torch.zeros((fake_predictions.shape[0], 1)).to(device)
+            # fake_loss = criterion(fake_predictions, fake_labels)
+
+            log_probs_real = torch.log(real_predictions)
+            real_loss  = - torch.mean(log_probs_real)
+
+            log_probs_fake = torch.log(1 - fake_predictions)
+            fake_loss = - torch.mean(log_probs_fake)
+
+            # Compute total loss
+            loss_d = real_loss + fake_loss
+            d_losses.append(loss_d.data.item())
+
+            # Train disriminator
+            optimizer_D.zero_grad()
+            loss_d.backward(retain_graph=True)
+            optimizer_D.step()
+
 
             # Print progress
             if i % 100 == 0:
@@ -158,13 +194,23 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
                 for i in range(3):
                     gen_imgs_colour[:, i, :, :] = img_sample
                 grid = make_grid(gen_imgs_colour, nrow=5, normalize=True).permute(1, 2, 0)
-                plot_name = os.path.join(os.getcwd(), "images/image_{}.png".format(batches_done))
+                plot_name = os.path.join(os.getcwd(), "images/gan/image_{}.png".format(batches_done))
                 plt.imsave(plot_name, grid)
 
             # # Reset descriminator
             # if len(d_losses) > 5 and d_losses[-1] == d_losses[-2]:
             #     print(" -- RESTARTING DISCRIMINATOR --")
             #     discriminator = Discriminator().to(device)
+        avg_d_losses.append(np.mean(d_losses))
+        avg_g_losses.append(np.mean(g_losses))
+
+    if SAVE:
+        to_save = [d_losses, g_losses, avg_d_losses, avg_g_losses]
+        with open('images/gan/gan_losses_{}'.format(str(sess_id)), 'wb') as fp:
+            pickle.dump(to_save, fp)
+
+        torch.save(generator.state_dict(), "images/gan/models/gen_{}".format(sess_id))
+        torch.save(discriminator.state_dict(), "images/gan/models/dis_{}".format(sess_id))
 
 
 def mk_imgs(generator):
