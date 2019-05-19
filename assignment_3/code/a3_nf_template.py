@@ -79,7 +79,7 @@ class Coupling(torch.nn.Module):
         s = tanh(s)
         if not reverse:
             z = self.mask * z + (1-self.mask) * ( z * torch.exp(s) + t)
-            ldj = torch.sum((1-self.mask)*s,dim=1)
+            ldj = ldj + torch.sum((1-self.mask)*s,dim=1)
         else:
             z = self.mask * z + (1 - self.mask) * ((z - t) * torch.exp(-s))
             ldj = torch.zeros(ldj.shape)
