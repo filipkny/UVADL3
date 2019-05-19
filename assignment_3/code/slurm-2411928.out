@@ -1,0 +1,62 @@
+/var/spool/slurm-llnl/slurmd/job2411928/slurm_script: line 19: cd: /home/lgpu0295/UVADL3/code/: No such file or directory
+ ------ Job convnet_pytorch is started ------- 
+ 
+[Epoch 0] train bpd: 0.9002724745071974 val_bpd: 0.6192420182791618
+[Epoch 1] train bpd: 0.6173900064997977 val_bpd: 0.6161289423223593
+[Epoch 2] train bpd: 0.6151706622632604 val_bpd: 0.6146857950691951
+[Epoch 3] train bpd: 0.613990499887139 val_bpd: 0.6137434499216523
+[Epoch 4] train bpd: 0.6132581233240323 val_bpd: 0.6131547768104155
+[Epoch 5] train bpd: 0.612761691752297 val_bpd: 0.6127060612344835
+[Epoch 6] train bpd: 0.6123945443061075 val_bpd: 0.6123488924989903
+[Epoch 7] train bpd: 0.6121059446569076 val_bpd: 0.6120914212753896
+[Epoch 8] train bpd: 0.6118552675354505 val_bpd: 0.6118348521276721
+[Epoch 9] train bpd: 0.6116439843426309 val_bpd: 0.6116756758976685
+[Epoch 10] train bpd: 0.6114302775815537 val_bpd: 0.611421805869043
+[Epoch 11] train bpd: 0.6112343155456619 val_bpd: 0.611278051653446
+[Epoch 12] train bpd: 0.6110481213438741 val_bpd: 0.6110373523592256
+[Epoch 13] train bpd: 0.6108789427155544 val_bpd: 0.6109389301224585
+[Epoch 14] train bpd: 0.6107257454996549 val_bpd: 0.6107914531555616
+[Epoch 15] train bpd: 0.6105901516281452 val_bpd: 0.6106566244441308
+[Epoch 16] train bpd: 0.6104552067088408 val_bpd: 0.6105281358546862
+[Epoch 17] train bpd: 0.6103370294083604 val_bpd: 0.6104007298984723
+[Epoch 18] train bpd: 0.6102225188582856 val_bpd: 0.6101831383904845
+[Epoch 19] train bpd: 0.6101241632171148 val_bpd: 0.6101672507655946
+[Epoch 20] train bpd: 0.6100371042244633 val_bpd: 0.6101390233966126
+[Epoch 21] train bpd: 0.6099613350624755 val_bpd: 0.6100079181473371
+[Epoch 22] train bpd: 0.6098718184122885 val_bpd: 0.6099009855461323
+[Epoch 23] train bpd: 0.6098012055227431 val_bpd: 0.6098383378333117
+[Epoch 24] train bpd: 0.609746004575256 val_bpd: 0.6097529733048935
+[Epoch 25] train bpd: 0.6096727634023672 val_bpd: 0.6097604365788855
+[Epoch 26] train bpd: 0.6096190552064275 val_bpd: 0.6097408475283669
+[Epoch 27] train bpd: 0.6095729508930996 val_bpd: 0.6096437951105331
+[Epoch 28] train bpd: 0.6095318458621176 val_bpd: 0.6095906778400794
+[Epoch 29] train bpd: 0.6094803900703759 val_bpd: 0.6095095059385784
+[Epoch 30] train bpd: 0.6094267430557195 val_bpd: 0.6095017945759473
+[Epoch 31] train bpd: 0.6093909923738277 val_bpd: 0.609464620377128
+[Epoch 32] train bpd: 0.6093443453233087 val_bpd: 0.6094056300168826
+[Epoch 33] train bpd: 0.6093166178221497 val_bpd: 0.609369360737369
+[Epoch 34] train bpd: 0.6092751099994342 val_bpd: 0.6093354429685103
+[Epoch 35] train bpd: 0.6092350186759333 val_bpd: 0.6092901699907034
+[Epoch 36] train bpd: 0.6092144422082392 val_bpd: 0.6092555911260439
+[Epoch 37] train bpd: 0.6091719210368768 val_bpd: 0.6092493938860534
+[Epoch 38] train bpd: 0.6091489100564726 val_bpd: 0.6091812320655695
+[Epoch 39] train bpd: 0.6091177093961244 val_bpd: 0.6092006711255354
+Traceback (most recent call last):
+  File "a3_nf_template.py", line 287, in <module>
+    main()
+  File "a3_nf_template.py", line 277, in main
+    save_bpd_plot(train_curve, val_curve, 'images/nf/nfs_bpd.pdf')
+  File "a3_nf_template.py", line 231, in save_bpd_plot
+    plt.figure(figsize=(12, 6))
+  File "/hpc/eb/Debian9/matplotlib/2.1.1-foss-2017b-Python-3.6.3/lib/python3.6/site-packages/matplotlib-2.1.1-py3.6-linux-x86_64.egg/matplotlib/pyplot.py", line 539, in figure
+    **kwargs)
+  File "/hpc/eb/Debian9/matplotlib/2.1.1-foss-2017b-Python-3.6.3/lib/python3.6/site-packages/matplotlib-2.1.1-py3.6-linux-x86_64.egg/matplotlib/backend_bases.py", line 171, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/hpc/eb/Debian9/matplotlib/2.1.1-foss-2017b-Python-3.6.3/lib/python3.6/site-packages/matplotlib-2.1.1-py3.6-linux-x86_64.egg/matplotlib/backends/backend_tkagg.py", line 1049, in new_figure_manager_given_figure
+    window = Tk.Tk(className="matplotlib")
+  File "/hpc/eb/Debian9/Tkinter/3.6.3-foss-2017b-Python-3.6.3/lib/python3.6/tkinter/__init__.py", line 2017, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+_tkinter.TclError: no display name and no $DISPLAY environment variable
+srun: error: r31n6: task 0: Exited with exit code 1
+ 
+ ------ Job convnet_pytorch is finished -------
