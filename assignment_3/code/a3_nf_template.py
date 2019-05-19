@@ -172,8 +172,8 @@ class Model(nn.Module):
         Sample n_samples from the model. Sample from prior and create ldj.
         Then invert the flow and invert the logit_normalize.
         """
-        z = sample_prior((n_samples,) + self.flow.z_shape)
-        ldj = torch.zeros(z.size(0), device=z.device)
+        z = sample_prior((n_samples,) + self.flow.z_shape).float().to(device)
+        ldj = torch.zeros(z.size(0), device=z.device).float().to(device)
         z, ldj = self.flow.forward(z, ldj, reverse=True)
         # Reverse normalization
         # in case of cuda problems:
@@ -252,6 +252,15 @@ def main():
 
     train_curve, val_curve = [], []
     for epoch in range(ARGS.epochs):
+        gen_imgs = model.sample(25).detach().reshape(25, 28, 28)
+        filename = "images/nf/nf_{}".format(epoch)
+        gen_imgs_colour = torch.empty(25, 3, 28, 28)
+        for i in range(3):
+            gen_imgs_colour[:, i, :, :] = gen_imgs
+        grid = make_grid(gen_imgs_colour, nrow=5, normalize=True).permute(1, 2, 0)
+        plt.imsave(filename, grid)
+
+
         bpds = run_epoch(model, data, optimizer)
         train_bpd, val_bpd = bpds
         train_curve.append(train_bpd)
