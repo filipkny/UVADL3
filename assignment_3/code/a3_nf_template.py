@@ -1,5 +1,6 @@
 import argparse
 
+import math
 import torch
 import torch.nn as nn
 import matplotlib.pyplot as plt
@@ -16,8 +17,8 @@ def log_prior(x):
     Compute the elementwise log probability of a standard Gaussian, i.e.
     N(x | mu=0, sigma=1).
     """
-    raise NotImplementedError
-    return logp
+    log_ele = torch.sum(-x * x / 2 - np.log(np.sqrt(2 * np.pi)),dim=1)
+    return log_ele
 
 
 def sample_prior(size):
@@ -35,7 +36,7 @@ def get_mask():
                 mask[i, j] = 1
 
     mask = mask.reshape(1, 28*28)
-    mask = torch.from_numpy(mask)
+    mask = torch.from_numpy(mask).to(device)
 
     return mask
 
@@ -44,7 +45,6 @@ class Coupling(torch.nn.Module):
     def __init__(self, c_in, mask, n_hidden=1024):
         super().__init__()
         self.n_hidden = n_hidden
-
         # Assigns mask to self.mask and creates reference for pytorch.
         self.register_buffer('mask', mask)
 
@@ -52,8 +52,12 @@ class Coupling(torch.nn.Module):
         # scale variables.
         # Suggestion: Linear ReLU Linear ReLU Linear.
         self.nn = torch.nn.Sequential(
-            None
-            )
+            nn.Linear(c_in, n_hidden),
+            nn.ReLU(),
+            nn.Linear(n_hidden, n_hidden),
+            nn.ReLU(),
+            nn.Linear(n_hidden, c_in)
+        )
 
         # The nn should be initialized such that the weights of the last layer
         # is zero, so that its initial transform is identity.
@@ -70,10 +74,16 @@ class Coupling(torch.nn.Module):
         # log_scale = tanh(h), where h is the scale-output
         # from the NN.
 
+        h = self.nn(z * self.mask)
+        tanh = nn.Tanh()
+        t = h
+        s = tanh(h)
         if not reverse:
-            raise NotImplementedError
+            z = self.mask * z + (1-self.mask) * ( z * torch.exp(s) + t)
+            ldj = torch.sum((1-self.mask)*s,dim=1)
         else:
-            raise NotImplementedError
+            z = self.mask * z + (1 - self.mask) * ((z - t) * torch.exp(-s))
+            ldj = torch.zeros(ldj.shape)
 
         return z, ldj
 
@@ -144,7 +154,7 @@ class Model(nn.Module):
         Given input, encode the input to z space. Also keep track of ldj.
         """
         z = input
-        ldj = torch.zeros(z.size(0), device=z.device)
+        ldj = torch.zeros(z.size(0), device=device)
 
         z = self.dequantize(z)
         z, ldj = self.logit_normalize(z, ldj)
@@ -152,8 +162,9 @@ class Model(nn.Module):
         z, ldj = self.flow(z, ldj)
 
         # Compute log_pz and log_px per example
+        log_pz = log_prior(z)
+        log_px = log_pz + ldj
 
-        raise NotImplementedError
 
         return log_px
 
@@ -164,8 +175,12 @@ class Model(nn.Module):
         """
         z = sample_prior((n_samples,) + self.flow.z_shape)
         ldj = torch.zeros(z.size(0), device=z.device)
-
-        raise NotImplementedError
+        z, ldj = self.flow.forward(z, ldj, reverse=True)
+        # Reverse normalization
+        # in case of cuda problems:
+        z = z.to(device)
+        ldj = ldj.to(device)
+        z, ldj = self.logit_normalize(z, ldj, reverse=True)
 
         return z
 
@@ -178,8 +193,22 @@ def epoch_iter(model, data, optimizer):
     Returns the average bpd ("bits per dimension" which is the negative
     log_2 likelihood per dimension) averaged over the complete epoch.
     """
+    losses = []
 
-    avg_bpd = None
+    for i, (imgs, _) in enumerate(data):
+        imgs = imgs.to(device)
+        log_px = model.forward(imgs)
+        loss = - torch.mean(log_px)
+        losses.append(loss.item())
+        if model.training:
+            optimizer.zero_grad()
+            loss.backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=5.0)
+            optimizer.step()
+        # print("train: {}, bpd: {}".format(model.training, loss / (28 * 28) / np.log(2)))
+
+
+    avg_bpd = sum(losses) / len(losses) / (28 * 28) / math.log(2)
 
     return avg_bpd
 
@@ -237,7 +266,7 @@ def main():
         #  Save grid to images_nfs/
         # --------------------------------------------------------------------
 
-    save_bpd_plot(train_curve, val_curve, 'nfs_bpd.pdf')
+    save_bpd_plot(train_curve, val_curve, 'images/nf/nfs_bpd.pdf')
 
 
 if __name__ == "__main__":
