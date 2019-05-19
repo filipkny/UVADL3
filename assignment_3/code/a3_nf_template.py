@@ -56,7 +56,7 @@ class Coupling(torch.nn.Module):
             nn.ReLU(),
             nn.Linear(n_hidden, n_hidden),
             nn.ReLU(),
-            nn.Linear(n_hidden, c_in)
+            nn.Linear(n_hidden,2* c_in)
         )
 
         # The nn should be initialized such that the weights of the last layer
@@ -74,10 +74,9 @@ class Coupling(torch.nn.Module):
         # log_scale = tanh(h), where h is the scale-output
         # from the NN.
 
-        h = self.nn(z * self.mask)
         tanh = nn.Tanh()
-        t = h
-        s = tanh(h)
+        s, t = self.nn(self.mask * z).chunk(2, dim=1)
+        s = tanh(s)
         if not reverse:
             z = self.mask * z + (1-self.mask) * ( z * torch.exp(s) + t)
             ldj = torch.sum((1-self.mask)*s,dim=1)
