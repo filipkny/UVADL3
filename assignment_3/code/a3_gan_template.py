@@ -134,8 +134,6 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
 
             # Use descriminator to make predictions and then compute generator loss
             fake_predictions = discriminator(fake_imgs).to(device)
-            # real_labels = torch.ones((fake_predictions.shape[0],1)).to(device)
-            # loss_gen = criterion(fake_predictions, real_labels)
             log_probs_fake = torch.log(fake_predictions)
             loss_gen = - torch.mean(log_probs_fake)
             g_losses.append(loss_gen.data.item())
@@ -151,19 +149,14 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
             # Get predictions on real images and compute respective loss
             real_imgs = imgs.view(-1, 784).to(device)
             real_predictions = discriminator.forward(real_imgs)
-            # real_labels = torch.ones((real_predictions.shape[0], 1)).to(device)
-            # real_loss = criterion(real_predictions, real_labels)
 
             # Get predictions on fake images and compute respective loss
             z = torch.randn(args.batch_size, args.latent_dim, device=device)
             fake_images = generator(z)
             fake_predictions = discriminator.forward(fake_images)
-            # fake_labels = torch.zeros((fake_predictions.shape[0], 1)).to(device)
-            # fake_loss = criterion(fake_predictions, fake_labels)
 
             log_probs_real = torch.log(real_predictions)
             real_loss  = - torch.mean(log_probs_real)
-
             log_probs_fake = torch.log(1 - fake_predictions)
             fake_loss = - torch.mean(log_probs_fake)
 
@@ -189,18 +182,16 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
                 # You can use the function save_image(Tensor (shape Bx1x28x28),
                 # filename, number of rows, normalize) to save the generated
                 # images, e.g.:
-                img_sample = mk_imgs(generator)
+                z = torch.from_numpy(np.random.normal(0, 1, (25, 100))).to(device=device, dtype=torch.float)
+                img_sample = generator.forward(z).view(25, 28, 28).detach()
                 gen_imgs_colour = torch.empty(25, 3, 28, 28)
                 for i in range(3):
                     gen_imgs_colour[:, i, :, :] = img_sample
+
                 grid = make_grid(gen_imgs_colour, nrow=5, normalize=True).permute(1, 2, 0)
-                plot_name = os.path.join(os.getcwd(), "images/gan/image_{}.png".format(batches_done))
+                plot_name = "images/gan/image_{}.png"
                 plt.imsave(plot_name, grid)
 
-            # # Reset descriminator
-            # if len(d_losses) > 5 and d_losses[-1] == d_losses[-2]:
-            #     print(" -- RESTARTING DISCRIMINATOR --")
-            #     discriminator = Discriminator().to(device)
         avg_d_losses.append(np.mean(d_losses))
         avg_g_losses.append(np.mean(g_losses))
 
@@ -213,10 +204,6 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
         torch.save(discriminator.state_dict(), "images/gan/models/dis_{}".format(sess_id))
 
 
-def mk_imgs(generator):
-    z = torch.from_numpy(np.random.normal(0, 1, (25, 100))).to(device=device, dtype=torch.float)
-    imgs = generator.forward(z).view(25, 28, 28).detach()
-    return imgs
 
 def main():
     # Create output image directory

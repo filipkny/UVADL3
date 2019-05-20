@@ -77,11 +77,13 @@ class Coupling(torch.nn.Module):
         tanh = nn.Tanh()
         s, t = self.nn(self.mask * z).chunk(2, dim=1)
         s = tanh(s)
+        m1 = self.mask*z
+        m2 = (1-self.mask)
         if not reverse:
-            z = self.mask * z + (1-self.mask) * ( z * torch.exp(s) + t)
-            ldj = ldj + torch.sum((1-self.mask)*s,dim=1)
+            z = m1+m2*(z*torch.exp(s)+t)
+            ldj = ldj + torch.sum(m2*s,dim=1)
         else:
-            z = self.mask * z + (1 - self.mask) * ((z - t) * torch.exp(-s))
+            z = m1+m2*((z-t)*torch.exp(-s))
             ldj = torch.zeros(ldj.shape)
 
         return z, ldj
@@ -161,9 +163,7 @@ class Model(nn.Module):
         z, ldj = self.flow(z, ldj)
 
         # Compute log_pz and log_px per example
-        log_pz = log_prior(z)
-        log_px = log_pz + ldj
-
+        log_px = log_prior(z) + ldj
 
         return log_px
 
@@ -174,11 +174,11 @@ class Model(nn.Module):
         """
         z = sample_prior((n_samples,) + self.flow.z_shape).float().to(device)
         ldj = torch.zeros(z.size(0), device=z.device).float().to(device)
-        z, ldj = self.flow.forward(z, ldj, reverse=True)
-        # Reverse normalization
-        # in case of cuda problems:
+
+        z, ldj = self.flow(z, ldj, reverse=True)
         z = z.to(device)
         ldj = ldj.to(device)
+
         z, ldj = self.logit_normalize(z, ldj, reverse=True)
 
         return z
@@ -196,7 +196,7 @@ def epoch_iter(model, data, optimizer):
 
     for i, (imgs, _) in enumerate(data):
         imgs = imgs.to(device)
-        log_px = model.forward(imgs)
+        log_px = model(imgs)
         loss = - torch.mean(log_px)
         losses.append(loss.item())
         if model.training:
