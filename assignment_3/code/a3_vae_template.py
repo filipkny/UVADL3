@@ -114,9 +114,7 @@ def epoch_iter(model, data, optimizer):
     average_epoch_elbo = 0
     for i, datapoints in enumerate(data):
         datapoints = datapoints.reshape(-1, 28 ** 2).to(device)
-
         elbo = model(datapoints)
-
         if model.training:
             model.zero_grad()
             elbo.backward()
@@ -154,22 +152,6 @@ def save_elbo_plot(train_curve, val_curve, filename):
     plt.ylabel('ELBO')
     plt.tight_layout()
     plt.savefig(filename)
-
-
-def plot_manifold(model, device, amount=15):
-
-    model.eval()
-
-    amount += 2
-    ppf = norm.ppf(torch.linspace(0.001, 0.999, steps=amount))
-    z_x, z_y = np.meshgrid(ppf, ppf)
-    z = torch.tensor(np.array(list(zip(z_x.flatten(), z_y.flatten())))).to(torch.float).to(device)
-    im_means = model.decoder(z)
-    filename = "images/vae/manifold.png"
-    plt.imsave(filename,
-        make_grid(im_means.view(-1, 1, 28, 28), nrow=int(np.sqrt(im_means.shape[0]+2))).transpose(2, 0).transpose(1, 0).detach().cpu().numpy())
-
-
 
 def main():
     data = bmnist()[:2]  # ignore test split

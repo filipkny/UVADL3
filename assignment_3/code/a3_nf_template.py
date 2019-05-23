@@ -55,14 +55,23 @@ class Coupling(torch.nn.Module):
             nn.Linear(c_in, n_hidden),
             nn.ReLU(),
             nn.Linear(n_hidden, n_hidden),
-            nn.ReLU(),
-            nn.Linear(n_hidden,2* c_in)
+            nn.ReLU()
         )
+
+        self.t = nn.Linear(n_hidden, c_in)
+
+        self.s = nn.Sequential(
+            nn.Linear(n_hidden, c_in),
+            nn.Tanh()
+        )
+
 
         # The nn should be initialized such that the weights of the last layer
         # is zero, so that its initial transform is identity.
-        self.nn[-1].weight.data.zero_()
-        self.nn[-1].bias.data.zero_()
+        self.s[-2].weight.data.zero_()
+        self.s[-2].bias.data.zero_()
+        self.t.weight.data.zero_()
+        self.t.bias.data.zero_()
 
     def forward(self, z, ldj, reverse=False):
         # Implement the forward and inverse for an affine coupling layer. Split
@@ -74,9 +83,9 @@ class Coupling(torch.nn.Module):
         # log_scale = tanh(h), where h is the scale-output
         # from the NN.
 
-        tanh = nn.Tanh()
-        s, t = self.nn(self.mask * z).chunk(2, dim=1)
-        s = tanh(s)
+        mid = self.nn(self.mask * z)
+        s = self.s(mid)
+        t = self.t(mid)
         m1 = self.mask*z
         m2 = (1-self.mask)
         if not reverse:
@@ -204,7 +213,6 @@ def epoch_iter(model, data, optimizer):
             loss.backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=5.0)
             optimizer.step()
-        # print("train: {}, bpd: {}".format(model.training, loss / (28 * 28) / np.log(2)))
 
 
     avg_bpd = sum(losses) / len(losses) / (28 * 28) / math.log(2)
@@ -249,7 +257,8 @@ def main():
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
 
     os.makedirs('images_nfs', exist_ok=True)
-
+    import time
+    t1 = time.time()
     train_curve, val_curve = [], []
     for epoch in range(ARGS.epochs):
         gen_imgs = model.sample(25).detach().reshape(25, 28, 28)
@@ -275,7 +284,8 @@ def main():
         # --------------------------------------------------------------------
 
     save_bpd_plot(train_curve, val_curve, 'images/nf/nfs_bpd.pdf')
-
+    t2 = time.time()
+    print("Took {} seconds".format(t2 - t1))
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

@@ -37,7 +37,7 @@ class Generator(nn.Module):
 
         if dropout:
             self.model = nn.Sequential(
-                nn.Linear(args.latent_dim, 128),
+                nn.Linear(100, 128),
                 nn.LeakyReLU(0.2),
                 nn.Dropout(0.3),
                 nn.Linear(128, 256),
@@ -57,7 +57,7 @@ class Generator(nn.Module):
             )
         else:
             self.model = nn.Sequential(
-                nn.Linear(args.latent_dim, 128),
+                nn.Linear(100, 128),
                 nn.LeakyReLU(0.2),
                 nn.Linear(128,256),
                 nn.BatchNorm1d(256),
@@ -156,9 +156,9 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
             fake_predictions = discriminator.forward(fake_images)
 
             log_probs_real = torch.log(real_predictions)
-            real_loss  = - torch.mean(log_probs_real)
+            real_loss  = -torch.mean(log_probs_real)
             log_probs_fake = torch.log(1 - fake_predictions)
-            fake_loss = - torch.mean(log_probs_fake)
+            fake_loss = -torch.mean(log_probs_fake)
 
             # Compute total loss
             loss_d = real_loss + fake_loss
@@ -184,11 +184,11 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D):
                 # images, e.g.:
                 z = torch.from_numpy(np.random.normal(0, 1, (25, 100))).to(device=device, dtype=torch.float)
                 img_sample = generator.forward(z).view(25, 28, 28).detach()
-                gen_imgs_colour = torch.empty(25, 3, 28, 28)
+                imgs = torch.empty(25, 3, 28, 28)
                 for i in range(3):
-                    gen_imgs_colour[:, i, :, :] = img_sample
+                    imgs[:, i, :, :] = img_sample
 
-                grid = make_grid(gen_imgs_colour, nrow=5, normalize=True).permute(1, 2, 0)
+                grid = make_grid(imgs, nrow=5, normalize=True).permute(1, 2, 0)
                 plot_name = "images/gan/image_{}.png"
                 plt.imsave(plot_name, grid)
 
